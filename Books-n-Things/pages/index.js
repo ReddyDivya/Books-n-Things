@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {HeroBanner, Product, FooterBanner} from '../components';
 
 const Home = () => {
   return (
