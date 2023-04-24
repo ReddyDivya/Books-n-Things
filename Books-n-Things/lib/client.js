@@ -9,3 +9,9 @@ const client = sanityClient({
     useCdn: true,
     token: process.env.NEXT_PUBLIC_SANITY_TOKEN //for security concerns using Macros
 })
+
+//We are using builder to use images from sanity
+const builder = imageUrlBuilder(client);
+
+//sanity give us the access to image urls where our images are stored
+export const urlFor = (source) => builder.image(source);
