@@ -13,6 +13,30 @@ export default{
                 hotspot: true,
             },
         },
-        
+        {
+            name: 'buttonText',
+            title: 'ButtonText',
+            type: string,
+        },
+        {
+            name: 'product',
+            title: 'Product',
+            type: string,
+        },
+        {
+            name: 'desc',
+            title: 'Desc',
+            type: string,
+        },
+        {
+            name: 'smallText',
+            title: 'smallText',
+            type: string,
+        },
+        {
+            name: 'midText',
+            title: 'midText',
+            type: string,
+        },
     ]
 }
