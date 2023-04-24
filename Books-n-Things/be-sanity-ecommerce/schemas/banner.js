@@ -4,7 +4,6 @@ export default{
     type: 'document', 
     fields : [
         //fields are going to be object based
-        //field-1 image
         {
             name: 'image',
             title: 'Image',
@@ -16,27 +15,27 @@ export default{
         {
             name: 'buttonText',
             title: 'ButtonText',
-            type: string,
+            type: 'string',
         },
         {
             name: 'product',
             title: 'Product',
-            type: string,
+            type: 'string',
         },
         {
             name: 'desc',
             title: 'Desc',
-            type: string,
+            type: 'string',
         },
         {
             name: 'smallText',
             title: 'smallText',
-            type: string,
+            type: 'string',
         },
         {
             name: 'midText',
             title: 'midText',
-            type: string,
+            type: 'string',
         },
         {
             name: 'largeText1',
@@ -46,7 +45,7 @@ export default{
         {
             name: 'largeText2',
             title: 'LargeText2',
-            type: 'string',
+            type: string,
         },
         {
             name: 'discount',
