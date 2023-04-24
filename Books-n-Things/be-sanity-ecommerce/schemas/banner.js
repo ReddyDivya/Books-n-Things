@@ -1,9 +1,8 @@
-export default{
+export default {
     name: 'banner',
     title: 'Banner',
-    type: 'document', 
-    fields : [
-        //fields are going to be object based
+    type: 'document',
+    fields: [
         {
             name: 'image',
             title: 'Image',
@@ -29,12 +28,12 @@ export default{
         },
         {
             name: 'smallText',
-            title: 'smallText',
+            title: 'SmallText',
             type: 'string',
         },
         {
             name: 'midText',
-            title: 'midText',
+            title: 'MidText',
             type: 'string',
         },
         {
@@ -45,7 +44,7 @@ export default{
         {
             name: 'largeText2',
             title: 'LargeText2',
-            type: string,
+            type: 'string',
         },
         {
             name: 'discount',
@@ -57,5 +56,6 @@ export default{
             title: 'SaleTime',
             type: 'string',
         },
-    ]
-}
+    ],
+  };
+  
