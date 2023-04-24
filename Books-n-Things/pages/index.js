@@ -1,5 +1,5 @@
 import React from 'react';
-import {client} from '../lib/client';
+import {client, urlFor} from '../lib/client.js';
 import {HeroBanner, Product, FooterBanner} from '../components';
 
 //populating the data from products, bannerData
@@ -24,11 +24,15 @@ const Home = ({products, bannerData}) => {
 
 //In next.js, we have to use getServerSideProps() to get data from sanity
 export const getServerSideProps  = async () => {
+
+  console.log('getServerSideProps');
   //sanity query
+  
   
   //Products
   const query = `*[_type == "product"]`; //grab all products info
   const products = await client.fetch(query);//fetching info from the product query
+
 
   //Banner
   const bannerQuery = `*[_type == "banner"]`; //grab all Banner info
