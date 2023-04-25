@@ -16,7 +16,7 @@ const Home = ({products, bannerData}) => {
         products?.map((product) => <Product key={product._id} product={product}/> )
       }
 
-      <FooterBanner/>
+      <FooterBanner footerBanner = {bannerData && bannerData[0]}/>
     </div>
     </>
   )
@@ -24,9 +24,7 @@ const Home = ({products, bannerData}) => {
 
 //In next.js, we have to use getServerSideProps() to get data from sanity
 export const getServerSideProps  = async () => {
-
   //sanity query
- 
   //Products
   const query = `*[_type == "product"]`; //grab all products info
   const products = await client.fetch(query);//fetching info from the product query
