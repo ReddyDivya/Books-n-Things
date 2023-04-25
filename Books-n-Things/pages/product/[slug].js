@@ -1,5 +1,5 @@
 //The file name is in [] which means it's going to be dynamic
-import React from 'react';
+import React, {useState } from 'react';
 import {client, urlFor} from '../../lib/client';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import { Product } from '../../components';
@@ -82,6 +82,7 @@ const ProductDetails = ({product, products}) => {
   )
 }
 
+//getStaticPaths
 export const getStaticPaths = async () => {
     const query = `*[_type == "product"] {
       slug {
