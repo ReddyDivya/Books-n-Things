@@ -22,6 +22,21 @@ const Home = ({products, bannerData}) => {
   )
 }
 
+export const getStaticPaths = async () => {
+  const query = `*[_type == "product"]{
+    slug{
+      current
+    }
+  }`;
+
+  const products = await client.fetch(query);
+
+  {/* parenthesis followed by a cury brace which means we are instantly returning an object from a function*/}
+  const paths = products.map((product) => ({
+
+  }))
+}//getStaticPaths
+
 //In next.js, we have to use getServerSideProps() to get data from sanity
 export const getServerSideProps  = async () => {
   //sanity query
