@@ -3,7 +3,7 @@ import Head from 'next/head'; //head is same as in HTML. It gives some metadata 
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-const Layout = () => {
+const Layout = ({children}) => {
 
   return (
     <div className="layout">
@@ -17,7 +17,7 @@ const Layout = () => {
 
         {/*main - html5 header tag*/}
         <main className="main-container">
-          EMPTY
+          {children}
         </main>
 
         {/*footer - html5 header tag*/}
