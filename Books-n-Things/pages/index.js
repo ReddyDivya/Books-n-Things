@@ -33,8 +33,16 @@ export const getStaticPaths = async () => {
 
   {/* parenthesis followed by a cury brace which means we are instantly returning an object from a function*/}
   const paths = products.map((product) => ({
+      params: {
+        slug: product.slug.current
+      }
+  }));
 
-  }))
+  //returning the object
+  return {
+    paths,
+    fallback : 'blocking' //this is one of the ways to set the fallback
+  }
 }//getStaticPaths
 
 //In next.js, we have to use getServerSideProps() to get data from sanity

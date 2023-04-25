@@ -15,34 +15,63 @@ const ProductDetails = ({product, products}) => {
                     <img src={urlFor(image && image[0])} 
                     />    
                 </div>
+                {/* <div className="small-images-container">
+                    {
+                        image?.map((item, i) => (
+                            <img src={urlFor(item)} 
+                            className="" onMouseEnter=""/>
+                        ))
+                    }
+                </div> */}
             </div>
         </div>
     </div>
   )
 }
 
+export const getStaticPaths = async () => {
+    const query = `*[_type == "product"] {
+      slug {
+        current
+      }
+    }
+    `;
+  
+    const products = await client.fetch(query);
+  
+    {/* parenthesis followed by a cury brace which means we are instantly returning an object from a function*/}
+    const paths = products.map((product) => ({
+      params: { 
+        slug: product.slug.current
+      }
+    }));
+    
+    //returning the object
+    return {
+      paths,
+      fallback: 'blocking' //this is one of the ways to set the fallback
+    }
+}//getStaticPaths
+
 /*
     In next.js, we have to use getStaticProps() 
     the data required to render the page is available at build time ahead of a user's request
     the data comes from a headless CMS
-*/    
-export const getStaticProps  = async ({params : {slug}}) => {
+*/  
+export const getStaticProps = async ({ params: { slug }}) => {
     //sanity query
-    //Products
-    const query = `*[_type == "product" && slug.current == '${slug}'][0]`; //fetch the first product info
-    const productQuery = `*[_type == "product"]`; //to fetch all the products
-
-    const product = await client.fetch(query);//fetching info from the product query
-    const products = await client.fetch(productQuery);//fetching info from the product query
+    //Product & products queries
+    const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
+    const productsQuery = '*[_type == "product"]'
     
-    // //Banner
-    // const bannerQuery = `*[_type == "banner"]`; //grab all Banner info
-    // const bannerData = await client.fetch(bannerQuery);//fetching info from the Banner query
+    const product = await client.fetch(query);
+    const products = await client.fetch(productsQuery);
   
-    //returing the fetched data from the 'product' & 'products' queires
+    console.log(product);
+  
     return {
-      props: {products, products}
+      props: { products, product }
     }
-  }//getStaticProps 
+}//getStaticProps
 
 export default ProductDetails
