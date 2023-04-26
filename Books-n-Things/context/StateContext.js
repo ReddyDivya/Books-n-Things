@@ -33,11 +33,11 @@ export const StateContext = ({children}) => {
           }
       })
 
-      setCartItems(updatedCartItems);
+      setCartItems(updatedCartItems);//updating cart
     }
     else{
       product.quantity = quantity;
-      setCartItems([...cartItems, {...product}]);
+      setCartItems([...cartItems, {...product}]); //first adding the existing cart items and in addition to that adding new product info
     }
     
     toast.success(`${qty} ${product.name} added to the cart.`); //disclosing the pop message
