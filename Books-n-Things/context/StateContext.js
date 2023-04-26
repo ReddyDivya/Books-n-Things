@@ -12,10 +12,20 @@ const StateContext = ({children}) => {
   const [totalQuantities, setTotalQuantities] = useState();
   const [qty, setQty] = useState(1);
 
+
   return (
-    <div>
-      StateContext
-    </div>
+    /* We can  make use of showCart, cartItems,
+        totalPrice, totalQuantities, qty all these values anywhere in the components*/
+    <Context.Provider >
+      value={{
+        showCart,
+        cartItems,
+        totalPrice,
+        totalQuantities,
+        qty
+      }}
+      {children}
+    </Context.Provider>
   )
 }
 
