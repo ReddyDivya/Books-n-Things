@@ -36,7 +36,8 @@ export const StateContext = ({children}) => {
       setCartItems(updatedCartItems);//updating cart
     }
     else{
-      product.quantity = quantity;
+      product.quantity = quantity;//updating quantity
+      
       setCartItems([...cartItems, {...product}]); //first adding the existing cart items and in addition to that adding new product info
     }
     
