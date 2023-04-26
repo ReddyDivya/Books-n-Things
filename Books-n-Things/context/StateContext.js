@@ -12,6 +12,11 @@ const StateContext = ({children}) => {
   const [totalQuantities, setTotalQuantities] = useState();
   const [qty, setQty] = useState(1);
   
+  const onAdd = (product, quantity) => {
+    const checkProductInCart = cartItems.find((item) => item._id === product._id)
+    
+    
+  }
 
   //increment Quantity
   const incQty = () => {
