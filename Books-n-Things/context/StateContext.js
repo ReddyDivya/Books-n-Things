@@ -13,19 +13,23 @@ export const StateContext = ({children}) => {
   const [qty, setQty] = useState(1);
   
   const onAdd = (product, quantity) => {
+
+    //checking whether the product is already in the cart or not
     const checkProductInCart = cartItems.find((item) => item._id === product._id);
     
+    //updating the states
     setTotalPrice((prevTotalPrice) => prevTotalPrice + product.price * quantity);
     setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + totalQuantities);
 
-    if(checkProductInCart){
-    
+    //if the product is already in the cart, just increase the quantity
+    if(checkProductInCart)
+    {
       //updating cart items
       const updatedCartItems = cartItems.map((cartProduct) => {
           if(cartProduct._id === product._id)
           return {
-            ...cartProduct, 
-            quantity: cartProduct.quantity + quantity
+            ...cartProduct,  //cart items
+            quantity: cartProduct.quantity + quantity //quantity - newly updated quantity
           }
       })
 
