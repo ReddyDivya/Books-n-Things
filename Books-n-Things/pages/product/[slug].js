@@ -10,7 +10,7 @@ const ProductDetails = ({product, products}) => {
     
   const {image, name, details, price} = product;
   const [index, setIndex] = useState(0);
-  const {incQty, decQty, qty, onAdd} = useStateContext();
+  const {incQty, decQty, qty, onAdd} = useStateContext(); //these are some functions
 
   return (
     <div>
