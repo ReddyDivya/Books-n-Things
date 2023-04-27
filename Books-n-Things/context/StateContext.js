@@ -112,22 +112,23 @@ export const StateContext = ({children}) => {
     /* We can  make use of showCart, cartItems,
         totalPrice, totalQuantities, qty all these values anywhere in the components*/
         <Context.Provider
-          value={{
-            showCart,
-            setShowCart,
-            cartItems,
-            totalPrice,
-            totalQuantities,
-            qty,
-            incQty,
-            decQty,
-            onAdd,
-            setCartItems,
-            setTotalPrice,
-            setTotalQuantities,
-            toggleCartItemQuanitity,
-            onRemove
-          }}>  
+        value={{
+          showCart,
+          setShowCart,
+          cartItems,
+          totalPrice,
+          totalQuantities,
+          qty,
+          incQty,
+          decQty,
+          onAdd,
+          toggleCartItemQuanitity,
+          onRemove,
+          setCartItems,
+          setTotalPrice,
+          setTotalQuantities 
+        }}
+      >
         {children}
       </Context.Provider>
   )
