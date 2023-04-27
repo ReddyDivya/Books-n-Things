@@ -8,8 +8,8 @@ export default async function handler(req, res) {
         mode: 'payment',
         payment_method_types: ['card'],
         shipping_options:[
-            {'shipping_rate' : 'shr_1N1OIySGAcyJDTTFdsAeHA1q'},
-            {'shipping_rate' : 'shr_1N1OLmSGAcyJDTTFIlxu9b2U'},
+            {'shipping_rate' : 'shr_1N1OIySGAcyJDTTFdsAeHA1q'},//free shipping
+            {'shipping_rate' : 'shr_1N1OLmSGAcyJDTTFIlxu9b2U'},//fast shipping - 100INR
         ],
         billing_address_collection:'auto',
         line_items: [
