@@ -79,6 +79,7 @@ const Cart = () => {
         </div>
         {cartItems.length >= 1 && (
           <div className="cart-bottom">
+            <br/>
             <div className="total">
               <h3>Subtotal:</h3>
               <h3>₹{totalPrice}</h3>
