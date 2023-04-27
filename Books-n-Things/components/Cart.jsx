@@ -10,7 +10,6 @@ const Cart = () => {
 
   const handleCheckout = () => {
 
-
   }//handleCheckout
 
   //setting up reference for cart

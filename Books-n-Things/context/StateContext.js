@@ -22,7 +22,7 @@ export const StateContext = ({children}) => {
     
     //updating the states
     setTotalPrice((prevTotalPrice) => prevTotalPrice + product.price * quantity);
-    setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + totalQuantities);
+    setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + quantity );
 
     //if the product is already in the cart, just increase the quantity
     if(checkProductInCart)
@@ -77,8 +77,7 @@ export const StateContext = ({children}) => {
     } else if(value === 'dec') //decrement case
      {
       if (foundProduct.quantity > 1) //we can't lower the quantity if it's less than 1
-      {
-        
+      {        
         //updating with current cart items, adding new product{object}, and decreasing quantity by 1
         setCartItems([...newCartItems, { ...foundProduct, quantity: foundProduct.quantity - 1 } ]);
         
