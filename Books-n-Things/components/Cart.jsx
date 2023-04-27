@@ -68,7 +68,12 @@ const Cart = () => {
                                 <AiOutlinePlus/>
                               </span>
                             </p>
-                        </div>  
+                        </div>
+                        <button type="button" 
+                          className="remove-item"
+                          onClick={() => onRemove(item)}>
+                            <TiDeleteOutline />
+                        </button>
                     </div>
                 </div> 
               </div> 
