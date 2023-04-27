@@ -13,7 +13,7 @@ export default async function handler(req, res) {
         payment_method_types: ['card'],
         billing_address_collection: 'auto',
         shipping_options: [
-          { shipping_rate: `shr_1N1QRNSGAcyJDTTFDyLBvNmg` }
+          { shipping_rate: process.env.NEXT_PUBLIC_STRIPE_SHIPPING_RATE }
         ],
         //looping through items
         line_items: req.body.map((item) => {
