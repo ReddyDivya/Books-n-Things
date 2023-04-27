@@ -5,7 +5,7 @@ const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
 //Step-2: We are accepting the request and sending in the body
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    console.log(' data >> '+ req.body.cartItems);
+    console.log(' data >> '+ req.body);
     try {
       const params = {
         submit_type: 'pay',
@@ -13,8 +13,7 @@ export default async function handler(req, res) {
         payment_method_types: ['card'],
         billing_address_collection: 'auto',
         shipping_options: [
-          { shipping_rate: 'shr_1N1OIySGAcyJDTTFdsAeHA1q' }, //free shipping
-          { shipping_rate: 'shr_1N1OLmSGAcyJDTTFIlxu9b2U' }, //fast shipping - 100/-
+          { shipping_rate: `shr_1N1QRNSGAcyJDTTFDyLBvNmg` }
         ],
         //looping through items
         line_items: req.body.map((item) => {
@@ -25,7 +24,7 @@ export default async function handler(req, res) {
 
           return {
             price_data: { 
-              currency: 'usd',
+              currency: 'inr',
               product_data: { 
                 name: item.name,
                 images: [newImage],
