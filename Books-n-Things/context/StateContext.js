@@ -75,11 +75,18 @@ export const StateContext = ({children}) => {
       
       //updating the total quantities
       setTotalQuantities(prevTotalQuantities => prevTotalQuantities + 1)
-    } else if(value === 'dec') //decrement case
-     {
-      if (foundProduct.quantity > 1) {
+    } 
+    else if(value === 'dec') //decrement case
+    {
+      if (foundProduct.quantity > 1) //we can't lower the quantity if it's less than 1
+      {
+        //updating with current cart items, adding new product{object}, and decreasing quantity by 1
         setCartItems([...newCartItems, { ...foundProduct, quantity: foundProduct.quantity - 1 } ]);
+        
+        //updating the total price
         setTotalPrice((prevTotalPrice) => prevTotalPrice - foundProduct.price)
+
+        //updating the total quantities
         setTotalQuantities(prevTotalQuantities => prevTotalQuantities - 1)
       }
     }
