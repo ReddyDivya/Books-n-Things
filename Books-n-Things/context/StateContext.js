@@ -57,15 +57,26 @@ export const StateContext = ({children}) => {
   }//onRemove
 
   const toggleCartItemQuanitity = (id, value) => {
+    //finidng the product
     foundProduct = cartItems.find((item) => item._id === id)
+
+    //finidng index of the item
     index = cartItems.findIndex((product) => product._id === id);
+
     const newCartItems = cartItems.filter((item) => item._id !== id)
 
+    //increment case
     if(value === 'inc') {
+      //updating with current cart items, adding new product{object}, and increasing quantity by 1
       setCartItems([...newCartItems, { ...foundProduct, quantity: foundProduct.quantity + 1 } ]);
+      
+      //updating the total price
       setTotalPrice((prevTotalPrice) => prevTotalPrice + foundProduct.price)
+      
+      //updating the total quantities
       setTotalQuantities(prevTotalQuantities => prevTotalQuantities + 1)
-    } else if(value === 'dec') {
+    } else if(value === 'dec') //decrement case
+     {
       if (foundProduct.quantity > 1) {
         setCartItems([...newCartItems, { ...foundProduct, quantity: foundProduct.quantity - 1 } ]);
         setTotalPrice((prevTotalPrice) => prevTotalPrice - foundProduct.price)
