@@ -9,7 +9,8 @@ import getStripe from '../lib/getStripe';
 
 const Cart = () => {
 
-  //Pay with Stripe functionality
+  //Pay with Stripe functionality 
+  //Step-1: We are making the request to the backend
   const handleCheckout = async () => {
     const stripe = await getStripe();
 

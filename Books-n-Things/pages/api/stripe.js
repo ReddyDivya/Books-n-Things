@@ -1,7 +1,10 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
+//Step-2: We are accepting the request and sending in the body
 export default async function handler(req, res) {
   if (req.method === 'POST') {
+    console.log(req.body.cartItems);
+
     try {
       const params = {
         submit_type: 'pay',
