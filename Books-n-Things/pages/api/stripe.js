@@ -5,7 +5,6 @@ const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
 //Step-2: We are accepting the request and sending in the body
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    console.log(' data >> '+ req.body);
     try {
       const params = {
         submit_type: 'pay',
@@ -19,8 +18,6 @@ export default async function handler(req, res) {
         line_items: req.body.map((item) => {
           const img = item.image[0].asset._ref;
           const newImage = img.replace('image-', 'https://cdn.sanity.io/images/r58g95hz/production/').replace('-webp', '.webp');
-
-          console.log('new Image >> '+ newImage);
 
           return {
             price_data: { 
@@ -38,7 +35,7 @@ export default async function handler(req, res) {
             quantity: item.quantity
           }
         }),
-        success_url: `${req.headers.origin}/success`,
+        success_url: `${req.headers.origin}/success`, //redirecting to success page
         cancel_url: `${req.headers.origin}/canceled`,
       }
 

@@ -10,11 +10,11 @@ const Success = () => {
   
   //this gets executes as soon as successful page loads
   useEffect(() => {
-    localStorage.clear();
-    setCartItems([]);
-    setTotalPrice(0);
-    setTotalQuantities(0);
-    runFireworks();
+    localStorage.clear(); //resetting local storage
+    setCartItems([]); //resetting cart items
+    setTotalPrice(0); //resetting total price
+    setTotalQuantities(0);//resetting quantities
+    runFireworks();//show confetti
   }, []);
 
   return (
