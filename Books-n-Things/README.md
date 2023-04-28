@@ -1,5 +1,6 @@
 Books-n-Things ECommerce with Stripe & Sanity
-![eCommerce](![image](https://user-images.githubusercontent.com/34181144/235060698-f7f99e02-fdbc-462f-a4c3-a9b11f364a13.png))
+![image](https://user-images.githubusercontent.com/34181144/235060744-0347f9b6-bf80-4ac5-8b28-c31a4482b33b.png)
+
 
 
 **Build and Deploy a fully responsive Books-n-Things ECommerce application with Payments functionality**. 
