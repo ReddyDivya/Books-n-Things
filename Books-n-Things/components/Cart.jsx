@@ -1,13 +1,18 @@
-import React, {useRef} from 'react';
-import Link from 'next/Link';
-import {AiOutlineMinus, AiOutlinePlus, AiOutlineShopping, AiOutlineLeft} from 'react-icons/ai';
-import {TiDeleteOutline} from 'react-icons/ti';
+import React, { useRef } from 'react';
+import Link from 'next/link';
+import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping } from 'react-icons/ai';
+import { TiDeleteOutline } from 'react-icons/ti';
 import toast from 'react-hot-toast';
+
 import { useStateContext } from '../context/StateContext';
 import { urlFor } from '../lib/client';
 import getStripe from '../lib/getStripe';
 
 const Cart = () => {
+  //setting up reference for cart
+  const cartRef = useRef();
+  //fetching data from state context
+  const {totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove } = useStateContext();
 
   //Pay with Stripe functionality 
   //Step-1: We are making the request to the backend
@@ -32,11 +37,8 @@ const Cart = () => {
     stripe.redirectToCheckout({sessionId: data.id});
   }//handleCheckout
 
-  //setting up reference for cart
-  const cartRef = useRef();
 
-  //fetching data from state context
-  const {totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove } = useStateContext();
+  
 
   return (
     <div className="cart-wrapper" ref={cartRef}>
