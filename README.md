@@ -1,6 +1,8 @@
 # Books-n-Things
 Books-n-Things' ECommerce application is an online bookstore that allows users to purchase books online with payment functionality. 
 
+## Demo
+
 ![Books-n-Things](https://user-images.githubusercontent.com/34181144/235346423-f63bd2ae-622d-4194-9e87-4247bf695674.gif)
 
 Books-n-Things ECommerce with Stripe & Sanity
