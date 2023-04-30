@@ -20,6 +20,7 @@ export const StateContext = ({children}) => {
   let foundProduct;
   let index;
   
+  //add items to cart
   const onAdd = (product, quantity) => {
 
     //checking whether the product is already in the cart or not
