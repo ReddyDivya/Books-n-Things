@@ -1,4 +1,12 @@
-Books-n-Things ECommerce with Stripe & Sanity
+# Books-n-Things
+
+Books-n-Things e-Commerce application is an online bookstore that allows users to purchase books online with payment functionality using Stripe & Sanity. 
+
+## Demo
+
+![Books-n-Things](https://user-images.githubusercontent.com/34181144/235346423-f63bd2ae-622d-4194-9e87-4247bf695674.gif)
+
+## Screen shorts
 
 ![image](https://user-images.githubusercontent.com/34181144/235060744-0347f9b6-bf80-4ac5-8b28-c31a4482b33b.png)
 
@@ -24,6 +32,3 @@ In this project, I have learned
 ![image](https://user-images.githubusercontent.com/34181144/235062762-a28a66a6-2951-478f-aa4c-f358e5f66bba.png)
 ![image](https://user-images.githubusercontent.com/34181144/235062977-e135a25a-383e-4b20-9ba2-b35790783d1c.png)
 ![image](https://user-images.githubusercontent.com/34181144/235063022-9ac0a5fd-ec3d-4d45-942e-38d710cc4ed7.png)
-
-
-
