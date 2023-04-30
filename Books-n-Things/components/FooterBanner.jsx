@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import Link from 'next/Link';
 import {urlFor}  from '../lib/client.js';
 
 const FooterBanner = ({footerBanner : 
@@ -14,6 +14,7 @@ const FooterBanner = ({footerBanner :
           {/* <h3>{largeText2}</h3> */}
           <p>{saleTime}</p>
         </div>
+
         <div className="right">
           <p>{smallText}</p>
           <h3>{midText}</h3>
