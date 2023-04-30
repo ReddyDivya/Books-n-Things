@@ -1,16 +1,21 @@
-//Maintains state 
-import React, { createContext, useContext, useState, useEffect } from 'react';
-import { toast } from 'react-hot-toast';
+//Maintaining state management
+import React, { createContext, useContext, useState } from 'react';
+import { toast } from 'react-hot-toast';//Adding beautiful notifications
 
-const Context = createContext();
+/*
+createContext()
+  - creating context to maintain state management
+  - returns context object
+*/
+const Context = createContext();//createContext(null)
 
 export const StateContext = ({children}) => {
 
-  const [showCart, setShowCart] = useState(false);
-  const [cartItems, setCartItems] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
-  const [totalQuantities, setTotalQuantities] = useState(0);
-  const [qty, setQty] = useState(1);
+  const [showCart, setShowCart] = useState(false); //show cart
+  const [cartItems, setCartItems] = useState([]); //cart items
+  const [totalPrice, setTotalPrice] = useState(0); //total price
+  const [totalQuantities, setTotalQuantities] = useState(0); //total quantities
+  const [qty, setQty] = useState(1); //quantity
 
   let foundProduct;
   let index;
@@ -106,10 +111,10 @@ export const StateContext = ({children}) => {
     }); //adding by 1 with the previous quantity value
   }
 
-
   return (
     /* We can  make use of showCart, cartItems,
-        totalPrice, totalQuantities, qty all these values anywhere in the components*/
+       totalPrice, totalQuantities, qty all these values anywhere in the components
+    */
         <Context.Provider
         value={{
           showCart,
