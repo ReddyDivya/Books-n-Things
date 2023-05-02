@@ -323,24 +323,21 @@ text-align: end;
 
   /*
     note:
-    - flex-direction & align-items are interlinked when it comes to designing through flexbox and grid. 
-    - when flex-direction is column & align-items works in vertical
-    - when flex-direction is row  & align-items works in horizontal 
+    - flex-direction & align-items are interlinked when it comes to designing through flexbox & grid.
+    - when flex-direction is column & align-items, items are shown in  row.
+    - when flex-direction is row  & align-items, items are shown in column.
   */
 
   /*flex - flexible responsive layout structure without using float or positioning*/
   display: flex;
   flex-direction: column; /* to show copyright and social icons in columns */
-  
-  /*
-  align-items: center
-    - default alignment for items inside a flexbox or grid container.
-    - to show copyright & social icons in center
-  */
-  /* align-items: center;  */
-  gap: 10px;
-  justify-content: center;
 
+  /* align-items - aligns items in vertical */
+  align-items: center;/*center is default*/
+  gap: 10px;
+
+  /* justify-content - aligns items in horizontal */
+  justify-content: center;
 }
 .footer-container .icons{
   font-size: 30px;
