@@ -246,11 +246,15 @@ text-align: end;
   margin-top: 120px;
 }
 
+/* FooterBanner description*/
 .banner-desc{
   display: flex ;
+
+  /* justify-content - aligns items in horizontal */
   justify-content: space-between;
 }
 
+/* FooterBanner description button*/
 .banner-desc button{
   border-radius: 15px;
   padding: 10px 16px;
