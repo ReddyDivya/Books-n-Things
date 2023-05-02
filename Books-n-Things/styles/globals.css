@@ -339,11 +339,11 @@ text-align: end;
   /* justify-content - aligns items in horizontal */
   justify-content: center;
 }
+
 .footer-container .icons{
   font-size: 30px;
-  display: flex;
-  gap: 10px;
 }
+
 /* Footer.jsx ends*/
 
  .cart-heading{
