@@ -30,7 +30,10 @@ width: 100%;
 
 .navbar-container{
   display: flex; /* this display all divs in the container in one row ___ */
+  
+  /* justify-content - aligns items in horizontal */
   justify-content: space-between;
+  
   margin: 6px 18px;
   position: relative;
 }
@@ -105,7 +108,10 @@ width: 100%;
 .products-container{
   display: flex; /* this display all divs in the container in one row ___ */
   flex-wrap: wrap;
+  
+  /* justify-content - aligns items in horizontal */
   justify-content: center;
+  
   gap: 15px;
   margin-top: 20px;
   width: 100%;
@@ -408,7 +414,10 @@ padding: 20px 10px;
 }
 .item-desc .flex{
   display: flex; /* this display all divs in the container in one row ___ */
+  
+  /* justify-content - aligns items in horizontal */
   justify-content: space-between;
+
   width: 350px;
    color: #324d67;
 
@@ -424,6 +433,8 @@ padding: 20px 10px;
 }
 .total{
   display: flex; /* this display all divs in the container in one row ___ */
+  
+  /* justify-content - aligns items in horizontal */
   justify-content: space-between;
 }
 .total h3{
@@ -612,6 +623,8 @@ padding: 6px;
 }
 .maylike-products-container{
   display: flex; /* this display all divs in the container in one row ___ */
+  
+  /* justify-content - aligns items in horizontal */
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
@@ -633,7 +646,10 @@ margin-top: 160px;
   padding: 50px;
   border-radius: 15px;
   display: flex; /* this display all divs in the container in one row ___ */
+  
+  /* justify-content - aligns items in horizontal */
   justify-content: center;
+
   align-items: center;
   flex-direction: column;
 }
