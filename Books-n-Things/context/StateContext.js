@@ -53,15 +53,18 @@ export const StateContext = ({children}) => {
     toast.success(`${qty} ${product.name} added to the cart.`); //disclosing the pop message
   }//onAdd
 
+  //remove items from cart
   const onRemove = (product) => {
-    foundProduct = cartItems.find((item) => item._id === product._id);
-    const newCartItems = cartItems.filter((item) => item._id !== product._id);
+    //finidng the product
+    foundProduct = cartItems.find((item) => item._id === product._id);//cart item
+    const newCartItems = cartItems.filter((item) => item._id !== product._id);//filtering the items 
 
     setTotalPrice((prevTotalPrice) => prevTotalPrice -foundProduct.price * foundProduct.quantity);
     setTotalQuantities(prevTotalQuantities => prevTotalQuantities - foundProduct.quantity);
     setCartItems(newCartItems);
   }//onRemove
 
+  //toggling the cart items quantity
   const toggleCartItemQuanitity = (id, value) => {
     //finidng the product
     foundProduct = cartItems.find((item) => item._id === id)
@@ -83,7 +86,7 @@ export const StateContext = ({children}) => {
     } else if(value === 'dec') //decrement case
      {
       if (foundProduct.quantity > 1) //we can't lower the quantity if it's less than 1
-      {        
+      {
         //updating with current cart items, adding new product{object}, and decreasing quantity by 1
         setCartItems([...newCartItems, { ...foundProduct, quantity: foundProduct.quantity - 1 } ]);
         
@@ -96,13 +99,12 @@ export const StateContext = ({children}) => {
     }
   }//toggleCartItemQuanitity
 
-
-  //increment Quantity
+  //increasing the quantities
   const incQty = () => {
     setQty((prevQty) => prevQty + 1); //adding by 1 with the previous quantity value
   }
 
-  //decrement Quantity
+  //decreasing the quantities
   const decQty = () => {
     setQty((prevQty) =>{
       if(prevQty - 1 < 1) //because can't go less than 1 i.e negative values
