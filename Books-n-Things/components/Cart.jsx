@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import Link from 'next/Link';
+import Link from 'next/Link'; //The Link component provides a method of client-side navigation within Next.js applications
 import {AiOutlineMinus, AiOutlinePlus, AiOutlineShopping, AiOutlineLeft} from 'react-icons/ai';
 import {TiDeleteOutline} from 'react-icons/ti';
 import toast from 'react-hot-toast';

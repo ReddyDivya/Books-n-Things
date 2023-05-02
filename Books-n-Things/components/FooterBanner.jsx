@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/Link';
+import Link from 'next/Link'; //The Link component provides a method of client-side navigation within Next.js applications
 import {urlFor}  from '../lib/client.js';
 import { useStateContext } from '../context/StateContext';
 
