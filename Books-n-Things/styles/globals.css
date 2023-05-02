@@ -313,15 +313,31 @@ text-align: end;
 }
 /* Cart ends */
 
+/* Footer.jsx starts*/
 .footer-container{
   color: #324d67;
-  text-align: center;
+  text-align:center;
   margin-top: 20px;
-  padding: 30px 10px;
+  padding: 30px 10px; /*30px - top & bottom, and to 10px - right & left*/
   font-weight: 700;
+
+  /*
+    note:
+    - flex-direction & align-items are interlinked when it comes to designing through flexbox and grid. 
+    - when flex-direction is column & align-items works in vertical
+    - when flex-direction is row  & align-items works in horizontal 
+  */
+
+  /*flex - flexible responsive layout structure without using float or positioning*/
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* to show copyright and social icons in columns */
+  
+  /*
+  align-items: center
+    - default alignment for items inside a flexbox or grid container.
+    - to show copyright & social icons in center
+  */
+  /* align-items: center;  */
   gap: 10px;
   justify-content: center;
 
@@ -331,6 +347,8 @@ text-align: end;
   display: flex;
   gap: 10px;
 }
+/* Footer.jsx ends*/
+
  .cart-heading{
   display: flex;
   align-items: center;
