@@ -3,12 +3,13 @@ import Link from 'next/Link'; //The Link component provides a method of client-s
 import {urlFor} from '../lib/client.js';
 import { useStateContext } from '../context/StateContext';
 
+//destructuring footerBanner for easy accessing the data
 const FooterBanner = ({footerBanner : 
   {discount, largeText1, largeText2, saleTime, 
-  smallText, midText, desc, product, buttonText, image}}) => {
+  smallText, midText, desc, buttonText, image}}) => {
 
-  //fetching data from state context
-  const {totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove } = useStateContext();
+  //fetching data(state variables, functions) from state context
+  const {setShowCart} = useStateContext();
 
   return (
     <div className="footer-banner-container">
@@ -28,7 +29,7 @@ const FooterBanner = ({footerBanner :
                 type="button"
                 onClick={() => setShowCart(false)}
             >
-              {buttonText}
+              {buttonText} {/* Shop Now btn*/}
             </button>
           </Link>
         </div>
