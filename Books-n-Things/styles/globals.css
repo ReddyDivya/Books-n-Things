@@ -73,7 +73,6 @@ width: 100%;
 }
 
 .track {
-  
   /*
   CSS position:
   - The position CSS property sets how an element is positioned in a document. 
@@ -133,6 +132,14 @@ width: 100%;
   transform: scale(1.1,1.1);
 }
 .cart-item-qty{
+  /*
+  CSS position:
+  - The position CSS property sets how an element is positioned in a document. 
+  - The top, right, bottom, and left properties determine the final location of positioned elements.
+
+  absolute:
+  - The offset(top/bottom/left/right) does affect the position of any other elements.
+  */
   position: absolute;
   right: -8px;
   font-size: 12px;
@@ -233,6 +240,14 @@ width: 100%;
   text-transform: uppercase;
 }
 .hero-banner-image{
+  /*
+  CSS position:
+  - The position CSS property sets how an element is positioned in a document. 
+  - The top, right, bottom, and left properties determine the final location of positioned elements.
+
+  absolute:
+  - The offset(top/bottom/left/right) does affect the position of any other elements.
+  */
   position: absolute;
   top: 0%;
   right:20%;
@@ -242,6 +257,14 @@ width: 100%;
 /* Hero Banner ends */
 
 .desc{
+/*
+  CSS position:
+  - The position CSS property sets how an element is positioned in a document. 
+  - The top, right, bottom, and left properties determine the final location of positioned elements.
+
+  absolute:
+  - The offset(top/bottom/left/right) does affect the position of any other elements.
+  */
 position: absolute;
 right: 10%;
 bottom: 5%;
@@ -336,6 +359,14 @@ text-align: end;
 }
 
 .footer-banner-image{
+  /*
+  CSS position:
+  - The position CSS property sets how an element is positioned in a document. 
+  - The top, right, bottom, and left properties determine the final location of positioned elements.
+
+  absolute:
+  - The offset(top/bottom/left/right) does affect the position of any other elements.
+  */
   position: absolute;
   top: -35%;
   left: 8%;
@@ -343,22 +374,20 @@ text-align: end;
   left: 25%;
 }
 
+/* This is to show right side of banner info */
 .banner-desc .right{
   line-height: 1.4;
 }
 
+/* This is to show right side of banner info */
 .banner-desc .right h3{
   font-weight: 800;
   font-size: 60px;
 }
 
+/* This is to show right side of banner info */
 .banner-desc .right p{
   font-size: 18px;
-}
-
-.banner-desc .right .company-desc{
-  font-size: 14px;
-  font-weight: 300;
 }
 /* FooterBanner.js ends */
 
@@ -511,6 +540,14 @@ padding: 20px 10px;
   border: none;
 }
 .cart-bottom{
+  /*
+  CSS position:
+  - The position CSS property sets how an element is positioned in a document. 
+  - The top, right, bottom, and left properties determine the final location of positioned elements.
+
+  absolute:
+  - The offset(top/bottom/left/right) does affect the position of any other elements.
+  */
   position: absolute;
   bottom: 12px;
   right: 5px;
