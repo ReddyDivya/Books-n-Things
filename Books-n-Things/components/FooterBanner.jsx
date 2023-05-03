@@ -3,7 +3,7 @@ import Link from 'next/Link'; //The Link component provides a method of client-s
 import {urlFor} from '../lib/client.js';
 import { useStateContext } from '../context/StateContext';
 
-//destructuring footerBanner for easy accessing the data
+//destructuring FooterBanner for easy accessing the data
 const FooterBanner = ({footerBanner : 
   {discount, largeText1, largeText2, saleTime, 
   smallText, midText, desc, buttonText, image}}) => {

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/Link';//The Link component provides a method of client-side navigation within Next.js applications
 import { urlFor } from '../lib/client';
 
+//destructuring HeroBanner for easy accessing the data
 const HeroBanner = ({ heroBanner : 
   {smallText, midText, image, product, buttonText, desc} }) => {
   return (
@@ -9,10 +10,8 @@ const HeroBanner = ({ heroBanner :
       <div>
         <p className="beats-solo">{smallText}</p>
         {/* <h3>{midText}</h3> */}
-        {/* <h1>{midText}</h1> */}
         <h1>BOOKS</h1>
         <img src={urlFor(image)} alt="headphones" className="hero-banner-image" />
-
         <div>
           <Link href={`/product/${product}`}>
             <button type="button">{buttonText}</button>
