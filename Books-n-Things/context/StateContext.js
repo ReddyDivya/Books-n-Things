@@ -7,7 +7,7 @@ createContext()
   - creating context to maintain state management
   - returns context object to use wherever we want the data
 */
-const Context = createContext();//createContext(null)
+const Context = createContext();//initializing createContext
 
 export const StateContext = ({children}) => {
 
@@ -115,8 +115,9 @@ export const StateContext = ({children}) => {
   }
 
   return (
-    /* We can  make use of showCart, cartItems,
-       totalPrice, totalQuantities, qty all these values anywhere in the components
+    /*
+      Context Provider to wrap the tree of components that need the state Context.'
+      We can  make use of all the values mentioned below wherever we wanted in the component.
     */
         <Context.Provider
         value={{
