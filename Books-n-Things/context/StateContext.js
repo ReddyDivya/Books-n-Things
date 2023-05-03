@@ -144,9 +144,15 @@ export const StateContext = ({children}) => {
           toggleCartItemQuanitity,//() - toggles quantities
         }}
       >
+        {/* all children components in this tree will have access to the user Context */}
         {children}
       </Context.Provider>
   )
 }
 
+/*
+useContext(context):
+  - to use the Context in a child component, we need to access it using the useContext Hook
+  - we can access the user Context in all children components with the given name like useStateContext
+*/
 export const useStateContext = () => useContext(Context);
