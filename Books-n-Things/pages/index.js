@@ -2,11 +2,20 @@ import React from 'react';
 import { client } from '../lib/client';
 import { Product, FooterBanner, HeroBanner } from '../components';
 
-//populating the data from products, bannerData
+/*
+  - This is where all the components are placed.
+    #1 HeroBanner
+    #2 Products
+    #3 FooterBanner
+  - populating the data from products, bannerData
+*/
 const Home = ({products, bannerData}) => {
   return (
     <>
+    {/* Showing hero banner */}
     <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
+
+    {/* Showing products like book cover, name, price */}
     <div className="products-heading">
       <h2>Best Selling Books in India</h2>
       <p>Books of many variations</p>
