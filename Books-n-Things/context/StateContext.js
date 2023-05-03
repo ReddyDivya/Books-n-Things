@@ -122,18 +122,23 @@ export const StateContext = ({children}) => {
         value={{
           showCart,
           setShowCart,//() - sets the cart items to show the count
+
+          //shows cart items
           cartItems,
+          setCartItems, //() - sets the cart items
+          onAdd, //() - adds items to cart
+          onRemove, //() - removes items from cart
+          
           totalPrice,
+          setTotalPrice, //() - sets total price of all the items
+
           totalQuantities,
+          setTotalQuantities, //() - sets total quantites of all the items
+
           qty,
           incQty,
           decQty,
-          onAdd, //adds items to cart
           toggleCartItemQuanitity,//() - toggles quantities
-          onRemove, //() - removes items from cart
-          setCartItems, //() - sets the cart items
-          setTotalPrice, //() - sets total price of all the items
-          setTotalQuantities //() - sets total quantites of all the items
         }}
       >
         {children}
