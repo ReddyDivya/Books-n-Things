@@ -5,13 +5,13 @@ import { toast } from 'react-hot-toast';//Adding beautiful notifications
 /*
 createContext()
   - creating context to maintain state management
-  - returns context object
+  - returns context object to use wherever we want the data
 */
 const Context = createContext();//createContext(null)
 
 export const StateContext = ({children}) => {
 
-  const [showCart, setShowCart] = useState(false); //show cart
+  const [showCart, setShowCart] = useState(false); //shows cart
   const [cartItems, setCartItems] = useState([]); //cart items
   const [totalPrice, setTotalPrice] = useState(0); //total price
   const [totalQuantities, setTotalQuantities] = useState(0); //total quantities
