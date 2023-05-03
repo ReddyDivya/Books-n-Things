@@ -8,8 +8,14 @@ import { Product, FooterBanner, HeroBanner } from '../components';
     #2 Products
     #3 FooterBanner
   - populating the data from products, bannerData
-*/
+  */
 const Home = ({products, bannerData}) => {
+
+  /*
+    - bannerData has information regarding only one book which is shown in HeroBanner & FooterBanner.
+    - products has information regarding all the books.
+  */
+
   return (
     <>
     {/* Showing hero banner */}
@@ -49,4 +55,4 @@ export const getServerSideProps  = async () => {
   }
 }//getServerSideProps 
 
-export default Home
+export default Home;

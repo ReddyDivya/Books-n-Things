@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
   return (
     //Wrapping in a Layout to have a Header, Footer for components
     <StateContext>
+      {/* Placing each & every component within Layout.*/}
       <Layout>
         <Toaster/>
         {
