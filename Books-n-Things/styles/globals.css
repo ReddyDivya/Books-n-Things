@@ -35,8 +35,19 @@ width: 100%;
   justify-content: space-between;
   
   margin: 6px 18px;
+  
+  /*
+  CSS position:
+  - The position CSS property sets how an element is positioned in a document. 
+  - The top, right, bottom, and left properties determine the final location of positioned elements.
+
+  relative:
+  - The offset(top/bottom/left/right) does not affect the position of any other elements unlike absolute.
+  - the space given for the element in the page layout is the same as if position were static.
+  */
   position: relative;
 }
+
 .marquee-text{
   font-size: 29px;
   font-weight: 600;
@@ -45,6 +56,16 @@ width: 100%;
 }
 
 .marquee {
+  
+  /*
+  CSS position:
+  - The position CSS property sets how an element is positioned in a document. 
+  - The top, right, bottom, and left properties determine the final location of positioned elements.
+
+  relative:
+  - The offset(top/bottom/left/right) does not affect the position of any other elements unlike absolute.
+  - the space given for the element in the page layout is the same as if position were static.
+  */
   position: relative;
   height: 400px;
   width: 100%;
@@ -52,6 +73,15 @@ width: 100%;
 }
 
 .track {
+  
+  /*
+  CSS position:
+  - The position CSS property sets how an element is positioned in a document. 
+  - The top, right, bottom, and left properties determine the final location of positioned elements.
+
+  absolute:
+  - The offset(top/bottom/left/right) does affect the position of any other elements.
+  */
   position: absolute;
   white-space: nowrap;
   will-change: transform;
@@ -83,6 +113,16 @@ width: 100%;
   font-size: 25px;
   color: gray;
   cursor: pointer;
+
+  /*
+  CSS position:
+  - The position CSS property sets how an element is positioned in a document. 
+  - The top, right, bottom, and left properties determine the final location of positioned elements.
+
+  relative:
+  - The offset(top/bottom/left/right) does not affect the position of any other elements unlike absolute.
+  - the space given for the element in the page layout is the same as if position were static.
+  */
   position: relative;
   transition: transform .4s ease;
   border: none;
@@ -149,6 +189,16 @@ width: 100%;
   padding: 100px 40px;
   background-color: #dcdcdc;
   border-radius: 15px;
+  
+  /*
+  CSS position:
+  - The position CSS property sets how an element is positioned in a document. 
+  - The top, right, bottom, and left properties determine the final location of positioned elements.
+
+  relative:
+  - The offset(top/bottom/left/right) does not affect the position of any other elements unlike absolute.
+  - the space given for the element in the page layout is the same as if position were static.
+  */
   position: relative;
   height: 500px;
   line-height: 0.9; 
@@ -330,6 +380,16 @@ text-align: end;
   background-color: white;
   float: right;
   padding: 40px 10px;
+  
+  /*
+  CSS position:
+  - The position CSS property sets how an element is positioned in a document. 
+  - The top, right, bottom, and left properties determine the final location of positioned elements.
+
+  relative:
+  - The offset(top/bottom/left/right) does not affect the position of any other elements unlike absolute.
+  - the space given for the element in the page layout is the same as if position were static.
+  */
   position: relative;
   
 }
