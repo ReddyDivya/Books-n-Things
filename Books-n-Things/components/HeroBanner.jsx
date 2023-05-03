@@ -4,7 +4,7 @@ import { urlFor } from '../lib/client';
 
 //destructuring HeroBanner for easy accessing the data
 const HeroBanner = ({ heroBanner : 
-  {smallText, midText, image, product, buttonText, desc} }) => {
+  {smallText, midText, image, slug, buttonText, desc} }) => {
   return (
     <div className="hero-banner-container">
       <div>
@@ -13,9 +13,8 @@ const HeroBanner = ({ heroBanner :
         <h1>BOOKS</h1>
         <img src={urlFor(image)} alt="headphones" className="hero-banner-image" />
         <div>
-          <Link href={`/product/${product}`}>
-
-            {/* Sj*/}
+          <Link href={`/product/${slug}`}>
+            {/* Shop Now btn */}
             <button type="button">{buttonText}</button>
           </Link>
           <div className="desc">
