@@ -116,8 +116,10 @@ export const StateContext = ({children}) => {
 
   return (
     /*
-      Context Provider to wrap the tree of components that need the state Context.'
-      We can  make use of all the values mentioned below wherever we wanted in the component.
+      Context Provider:
+      - to wrap the tree of components that need the state Context.
+      - Wrap child components in the Context Provider and supply the state value.
+      - We can  make use of all the values like showCart, setShowCart etc., mentioned below wherever we wanted in the chidren components.
     */
         <Context.Provider
         value={{
