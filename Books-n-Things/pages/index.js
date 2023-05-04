@@ -12,8 +12,8 @@ import { Product, FooterBanner, HeroBanner } from '../components';
 const Home = ({products, bannerData}) => {
 
   /*
-    - bannerData has information regarding only one book which is shown in HeroBanner & FooterBanner.
-    - products has information regarding all the books.
+  - products has information regarding all the books.  
+  - bannerData has information regarding only one book which is shown in HeroBanner & FooterBanner.
   */
 
   return (

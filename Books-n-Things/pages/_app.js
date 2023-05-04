@@ -5,7 +5,6 @@ import '../styles/globals.css';
 import { StateContext } from '../context/StateContext';
 
 function MyApp({ Component, pageProps }) {
-  console.log('props >> '+ pageProps);
   return (
     //Wrapping in a Layout to have a Header, Footer for components
     <StateContext>
