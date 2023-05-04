@@ -4,11 +4,11 @@ import {urlFor} from '../lib/client';
 
 //we are destructuring {image, name, slug, price} from product
 const Product = ({product : {image, name, slug, price}}) => {
-
+// console.log('slug >> ' + slug.current);
   return (
     <div>
       {/* {slug.current} will open slug.js which means ProductDetails component. */}
-      <Link href={`/product/${slug}`}>
+      <Link href={`/product/${slug.current}`}>
           <div className="product-card">
              <img
                 src={urlFor(image && image[0])}

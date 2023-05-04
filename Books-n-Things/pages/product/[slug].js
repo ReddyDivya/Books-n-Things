@@ -13,7 +13,7 @@ console.log(product);
  product - to show a product details.
  products - to show all products in 'You may also like' section.
 */
-  const {_id, image, name, details, price} = product;
+  const {image, name, details, price} = product;
   const [index, setIndex] = useState(0);
   const {incQty, decQty, qty, onAdd, setShowCart} = useStateContext(); //these are some functions
   
