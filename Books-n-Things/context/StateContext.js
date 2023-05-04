@@ -22,10 +22,13 @@ export const StateContext = ({children}) => {
   
   //add items to cart
   const onAdd = (product, quantity) => {
-
-    //checking whether the product is already in the cart or not
+  
+    /*
+      Checking whether the product is already in the cart or not.
+      If its already in the cart just increase the quantity.
+    */
     const checkProductInCart = cartItems.find((item) => item._id === product._id);
-    
+
     //updating the states
     setTotalPrice((prevTotalPrice) => prevTotalPrice + product.price * quantity);
     setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + quantity );
@@ -66,8 +69,7 @@ export const StateContext = ({children}) => {
 
   //toggling the cart items quantity in cart component
   const toggleCartItemQuanitity = (id, value) => {
-  
-  console.log(cartItems);
+
     //finidng the product
     foundProduct = cartItems.find((item) => item._id === id)
     
