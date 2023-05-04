@@ -66,7 +66,8 @@ export const StateContext = ({children}) => {
 
   //toggling the cart items quantity in cart component
   const toggleCartItemQuanitity = (id, value) => {
-    
+  
+  console.log(cartItems);
     //finidng the product
     foundProduct = cartItems.find((item) => item._id === id)
     
