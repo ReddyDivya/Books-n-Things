@@ -59,7 +59,7 @@ export const StateContext = ({children}) => {
 
   //remove items from cart
   const onRemove = (product) => {
-    //finidng the product
+    //checking is removing item is in the cart items or not.
     foundProduct = cartItems.find((item) => item._id === product._id);//cart item
     const newCartItems = cartItems.filter((item) => item._id !== product._id);//filtering the items 
 
