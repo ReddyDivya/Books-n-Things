@@ -1,10 +1,11 @@
+//This is a Products page
 import React from 'react';
 import Link from 'next/Link';//The Link component provides a method of client-side navigation within Next.js applications
 import {urlFor} from '../lib/client';
 
 //we are destructuring {image, name, slug, price} from product
 const Product = ({product : {image, name, slug, price}}) => {
-// console.log('slug >> ' + slug.current);
+
   return (
     <div>
       {/* {slug.current} will open slug.js which means ProductDetails component. */}
