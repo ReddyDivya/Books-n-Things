@@ -7,9 +7,10 @@ const Product = ({product : {image, name, slug, price}}) => {
 
   return (
     <div>
-      <Link href={`/product/${slug.current}`}>
+      {/* {slug.current} will open slug.js which means ProductDetails component. */}
+      <Link href={`/product/${slug}`}>
           <div className="product-card">
-             <img 
+             <img
                 src={urlFor(image && image[0])}
                 width={250}
                 height={250}

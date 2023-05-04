@@ -7,9 +7,11 @@ import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
 
 const ProductDetails = ({product, products}) => {
+console.log(product);
+
 /*
- product - to show a product details
- products - to show all products in 'You may also like' section
+ product - to show a product details.
+ products - to show all products in 'You may also like' section.
 */
   const {_id, image, name, details, price} = product;
   const [index, setIndex] = useState(0);

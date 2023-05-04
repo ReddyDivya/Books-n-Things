@@ -119,6 +119,8 @@ export const StateContext = ({children}) => {
     }); //adding by 1 with the previous quantity value
   }
 
+  console.log('setQty >> '+ qty);
+
   return (
     /*
       Context Provider:
