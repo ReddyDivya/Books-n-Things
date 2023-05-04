@@ -64,8 +64,9 @@ export const StateContext = ({children}) => {
     setCartItems(newCartItems);
   }//onRemove
 
-  //toggling the cart items quantity
+  //toggling the cart items quantity in cart component
   const toggleCartItemQuanitity = (id, value) => {
+    
     //finidng the product
     foundProduct = cartItems.find((item) => item._id === id)
     
@@ -141,7 +142,7 @@ export const StateContext = ({children}) => {
           qty,
           incQty,
           decQty,
-          toggleCartItemQuanitity,//() - toggles quantities
+          toggleCartItemQuanitity,//() - toggles cart item quantities in cart component
         }}
       >
         {/* all children components in this tree will have access to the user Context */}
