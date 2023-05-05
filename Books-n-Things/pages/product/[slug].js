@@ -99,7 +99,12 @@ const ProductDetails = ({product, products}) => {
   )
 }
 
-//getStaticPaths
+/*
+    The getStaticPaths function should return an object with the 
+    following required properties: paths
+
+    paths - The paths key determines which paths will be pre-rendered.
+*/
 export const getStaticPaths = async () => {
     const query = `*[_type == "product"] {
       slug {
