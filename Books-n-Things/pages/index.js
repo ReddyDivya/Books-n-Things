@@ -47,19 +47,23 @@ const Home = ({products, bannerData}) => {
 /*
   In next.js, we have to use getServerSideProps() to get data from sanity.
   This gets called on every request.
-  
+
 */
 export const getServerSideProps  = async () => {
-  //sanity query
-  //Products
+  
+  /*
+    Fetch data from external API
+  */
+  
+  // Products sanity query
   const query = `*[_type == "product"]`; //grab all products info
   const products = await client.fetch(query);//fetching info from the product query
 
-  //Banner
+  //Banner sanity query
   const bannerQuery = `*[_type == "banner"]`; //grab all Banner info
   const bannerData = await client.fetch(bannerQuery);//fetching info from the Banner query
 
-  //returing the fetched data from the 'product' & 'banner' queires
+  //returing the fetched data from the 'products' & 'bannerData' queires
   return {
     props: {products, bannerData}
   }
