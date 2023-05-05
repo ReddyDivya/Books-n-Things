@@ -1,3 +1,7 @@
+/*
+  Next.js supports CSS Modules using the 
+  [name].module.css file naming convention.
+*/
 .container {
   padding: 0 2rem;
 }
