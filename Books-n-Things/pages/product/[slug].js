@@ -137,18 +137,18 @@ export const getStaticPaths = async () => {
 */  
 export const getStaticProps = async ({ params: { slug }}) => {
     /*
-        
+    - params contains the product `slug`.
+    -------------------------------------
+    - Sanity query, 
+    - Product & products queries
     */
-    // Call an external API endpoint to get posts
-    //sanity query
-    //Product & products queries
+     
     const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
     const productsQuery = '*[_type == "product"]'
     
     const product = await client.fetch(query);
     const products = await client.fetch(productsQuery);
   
-    
     /*
         By returning { props: { products, product } }, the ProductDetails component
         will receive `products, product` as a props at build time.
