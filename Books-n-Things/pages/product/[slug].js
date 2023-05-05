@@ -1,4 +1,8 @@
-//The file name is in [] which means it's going to be dynamic
+/*
+    Next.js supports pages with dynamic routes. 
+    For example, if you create a file called pages/posts/[id].js, then it will be accessible at posts/1, posts/2, etc.
+    The file name is in [] which means it's going to be dynamic
+*/
 import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 
