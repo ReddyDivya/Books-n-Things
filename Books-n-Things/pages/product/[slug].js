@@ -11,7 +11,6 @@ import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
 
 const ProductDetails = ({product, products}) => {
-console.log(product);
 
 /*
  product - to show a product details.
@@ -113,12 +112,13 @@ export const getStaticPaths = async () => {
   
     {/* parenthesis followed by a cury brace which means we are instantly returning an object from a function*/}
     const paths = products.map((product) => ({
+      // Get the paths we want to pre-render based on `products`
       params: { 
         slug: product.slug.current
       }
     }));
     
-    //returning the object
+    
     return {
       paths,
       fallback: 'blocking' //this is one of the ways to set the fallback
