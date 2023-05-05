@@ -1,3 +1,7 @@
+/*
+  These styles (globals.css) will apply to all pages and components in your application. 
+  Due to the global nature of stylesheets, and to avoid conflicts, you may only import them inside pages/_app.js.
+*/
 html,
 body, * {
   padding: 0;

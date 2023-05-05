@@ -3,7 +3,10 @@ import { Toaster } from 'react-hot-toast';//for beautiful notifications
 import { Layout } from '../components';
 import { StateContext } from '../context/StateContext';
 
-//In next js, to add a stylesheet to our application, import the CSS file within pages/_app.js.
+/*
+  In next js, to add a stylesheet to our application, import the CSS file within pages/_app.js.
+  We may only import them inside pages/_app.js
+*/  
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
@@ -25,4 +28,5 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
+// This default export is required in a new `pages/_app.js` file.
 export default MyApp
