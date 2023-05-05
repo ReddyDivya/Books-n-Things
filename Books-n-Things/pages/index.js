@@ -1,3 +1,9 @@
+/*
+  Next.js is built around the concept of pages.
+  Inside the pages directory, add the index.js file to get started. 
+  This is the page that is rendered when the user visits the root of your application.
+*/
+
 import React from 'react';
 import { client } from '../lib/client';
 import { Product, FooterBanner, HeroBanner } from '../components';
