@@ -104,6 +104,10 @@ const ProductDetails = ({product, products}) => {
     following required properties: paths
 
     paths - The paths key determines which paths will be pre-rendered.
+
+    Eg: Suppose that you have a page that uses Dynamic Routes named 
+    pages/product/[slug].js. 
+    If you export getStaticPaths from this page and return the following for paths:
 */
 export const getStaticPaths = async () => {
     const query = `*[_type == "product"] {
