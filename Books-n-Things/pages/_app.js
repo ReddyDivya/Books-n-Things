@@ -1,8 +1,10 @@
 import React from 'react';
 import { Toaster } from 'react-hot-toast';//for beautiful notifications
 import { Layout } from '../components';
-import '../styles/globals.css';
 import { StateContext } from '../context/StateContext';
+
+//In next js, to add a stylesheet to our application, import the CSS file within pages/_app.js.
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
