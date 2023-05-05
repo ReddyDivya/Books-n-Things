@@ -129,7 +129,7 @@ export const getStaticPaths = async () => {
 }//getStaticPaths
 
 /*
-    This function gets called at build time
+    getStaticProps runs only on build time.
     -------------------------------------------
     In next.js, we have to use getStaticProps() 
     so that you can fetch the data about the post with this `slug` 

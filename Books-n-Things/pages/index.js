@@ -47,7 +47,11 @@ const Home = ({products, bannerData}) => {
 /*
   In next.js, we have to use getServerSideProps() to get data from sanity.
   This gets called on every request.
-
+  
+  Note:
+  -----
+  getServerSideProps is similar to getStaticProps, 
+  but the difference is that getServerSideProps is run on every request instead of on build time.
 */
 export const getServerSideProps  = async () => {
   
