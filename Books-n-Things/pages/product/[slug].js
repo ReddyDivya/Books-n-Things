@@ -126,11 +126,15 @@ export const getStaticPaths = async () => {
 }//getStaticPaths
 
 /*
+    This function gets called at build time
+    -------------------------------------------
     In next.js, we have to use getStaticProps() 
     the data required to render the page is available at build time ahead of a user's request
     the data comes from a headless CMS
 */  
 export const getStaticProps = async ({ params: { slug }}) => {
+    
+    // Call an external API endpoint to get posts
     //sanity query
     //Product & products queries
     const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
@@ -139,8 +143,11 @@ export const getStaticProps = async ({ params: { slug }}) => {
     const product = await client.fetch(query);
     const products = await client.fetch(productsQuery);
   
-    console.log(product);
-  
+    
+    /*
+        By returning { props: { products, product } }, the ProductDetails component
+        will receive `products, product` as a props at build time.
+    */
     return {
       props: { products, product }
     }
