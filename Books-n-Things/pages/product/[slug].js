@@ -138,6 +138,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params: { slug }}) => {
     /*
     - params contains the product `slug`.
+    - If the route is like /product/it-starts-with-us, then params.slug is `it-starts-with-us`
     -------------------------------------
     - Sanity query, 
     - Product & products queries
@@ -150,6 +151,8 @@ export const getStaticProps = async ({ params: { slug }}) => {
     const products = await client.fetch(productsQuery);
   
     /*
+        Pass `products, product` data to the page via props
+        ------------------------------------------------------
         By returning { props: { products, product } }, the ProductDetails component
         will receive `products, product` as a props at build time.
     */
