@@ -121,9 +121,13 @@ export const getStaticPaths = async () => {
   
     {/* parenthesis followed by a cury brace which means we are instantly returning an object from a function*/}
     const paths = products.map((product) => ({
-      // Get the paths we want to pre-render based on `products`
+      /*
+        - Get the paths we want to pre-render based on `products`
+        - The value for each params object must match the parameters used in the page name.
+        - If the page name is pages/products/[slug], then params should contain slug.
+      */
       params: { 
-        slug: product.slug.current
+        slug: product.slug.current //key and value should have same name
       }
     }));
     
