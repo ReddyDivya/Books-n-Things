@@ -118,10 +118,13 @@ export const getStaticPaths = async () => {
       }
     }));
     
-    
+    /*
+     We'll pre-render only these paths at build time.
+     { fallback: false } means other routes should 404.
+    */
     return {
       paths,
-      fallback: 'blocking' //this is one of the ways to set the fallback
+      fallback: false  //this is one of the ways to set the fallback
     }
 }//getStaticPaths
 
@@ -129,11 +132,13 @@ export const getStaticPaths = async () => {
     This function gets called at build time
     -------------------------------------------
     In next.js, we have to use getStaticProps() 
-    the data required to render the page is available at build time ahead of a user's request
-    the data comes from a headless CMS
+    so that you can fetch the data about the post with this `slug` 
+    and use it to pre-render the page.
 */  
 export const getStaticProps = async ({ params: { slug }}) => {
-    
+    /*
+        
+    */
     // Call an external API endpoint to get posts
     //sanity query
     //Product & products queries
