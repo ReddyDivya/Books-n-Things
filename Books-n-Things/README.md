@@ -41,5 +41,34 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 		max-width:50%; //max-width overrides width
 	</code>
 	
+---
+
+### margin : auto
+
+- horizontally center the element within its container.
+- the browser calculates the margin.
+
+---
+
+### display : flex
+
+- this display all divs in the container in one row ___
+
+### justify-content - aligns items in horizontal
+
+### CSS position:
+
+- The position CSS property sets how an element is positioned in a document. 
+- The top, right, bottom, and left properties determine the final location of positioned elements.
+
+	### relative
+- The offset(top/bottom/left/right) does not affect the position of any other elements unlike absolute.
+- the space given for the element in the page layout is the same as if position were static.
+	
+	<code>
+		position: relative;
+	</code>
+
+---
 
 
