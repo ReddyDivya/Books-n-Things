@@ -7,6 +7,7 @@
   Because this file is not a Page, you cannot use getStaticProps or getServerSideProps currently.
   
   SWR - components will get a stream of data updates constantly and automatically. & the UI will be always fast and reactive.
+  Eg: const { data, error } = useSWR('/api/navigation', fetcher);
 */
 import React from 'react';
 import Head from 'next/head'; //head is same as in HTML. It gives some metadata about website.
