@@ -1,3 +1,10 @@
+/*
+  Next.js uses the App component to initialize pages.
+  Persist layouts between page changes
+  Keeping state when navigating pages
+  Inject additional data into pages
+  Add global CSS only in this file ie. _app.js
+*/
 import React from 'react';
 import { Toaster } from 'react-hot-toast';//for beautiful notifications
 import { Layout } from '../components';
