@@ -80,10 +80,10 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 
 - sets how white space inside an element is handled.
 	
-	<code>
+	<block>
 		white-space: normal; //fits within the container
 		white-space: nowrap; //doesn't fits within the container
-	</code>
+	</block>
 
 ---	
 
