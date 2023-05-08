@@ -10,7 +10,7 @@ import Link from 'next/Link';
 import { BsBagCheckFill } from 'react-icons/bs';
 
 import { useStateContext } from '../context/StateContext';
-import { runFireworks } from '../lib/utils';
+import { runFireworks } from '../lib/utils'; //show confetti on successful payment
 
 const Success = () => {
   const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
