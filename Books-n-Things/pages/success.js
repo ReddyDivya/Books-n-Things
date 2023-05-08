@@ -1,3 +1,8 @@
+/*
+  This file is insid the pages directory. 
+  When a file is added to the pages directory, it's automatically available as a route.
+  Eg: If we create pages/success.js that exports a React component like below, it will be accessible at /success.
+*/
 import React, { useState, useEffect } from 'react';
 import Link from 'next/Link';
 import { BsBagCheckFill } from 'react-icons/bs';
