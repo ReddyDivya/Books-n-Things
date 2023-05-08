@@ -29,6 +29,14 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 - should inherit its color value from its parent element
 
 ---
+
+### max-width
+
+- Sets the maximum width of an element.
+- max-width overrides width.
+
+	width: 100%; 
+	max-width:50%; //max-width overrides width
 	
 
 
