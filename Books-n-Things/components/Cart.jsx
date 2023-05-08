@@ -2,15 +2,18 @@ import React, {useRef} from 'react';
 import Link from 'next/Link'; //The Link component provides a method of client-side navigation within Next.js applications
 import {AiOutlineMinus, AiOutlinePlus, AiOutlineShopping, AiOutlineLeft} from 'react-icons/ai';
 import {TiDeleteOutline} from 'react-icons/ti';
-import toast from 'react-hot-toast';
+import toast from 'react-hot-toast'; //to add beautiful notifications
 import { useStateContext } from '../context/StateContext';
 import { urlFor } from '../lib/client';
 import getStripe from '../lib/getStripe';
 
 const Cart = () => {
 
-  //Pay with Stripe functionality 
-  //Step-1: We are making the request to the backend
+  /*
+    Pay with Stripe functionality 
+    
+    Step-1: We are making the request to the backend
+  */
   const handleCheckout = async () => {
     const stripe = await getStripe();
 
