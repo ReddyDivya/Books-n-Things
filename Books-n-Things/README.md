@@ -6,9 +6,18 @@ I built and deployed a fully responsive Books-n-Things e-commerce application, w
 
 ## References
 
+### Stripe
+
+Checkout Payment - https://stripe.com/docs/checkout/quickstart
+
 ### CSS
 
 ::-webkit-scrollbar - https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar
+
+-It's a CSS pseudo-element, "customized" scrollbar.
+-Only available in Chrome, Edge, Opera, Safari.
+-It's visible only if width/height is specified.
+
 	
 	
 
