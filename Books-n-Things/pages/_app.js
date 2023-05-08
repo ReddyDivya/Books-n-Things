@@ -5,22 +5,22 @@ import { StateContext } from '../context/StateContext';
 
 /*
   In next js, to add a stylesheet to our application, import the CSS file within pages/_app.js.
-  We may only import them inside pages/_app.js
-*/  
+  globals.css file should be imported only inside pages/_app.js.
+*/
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
-    //Wrapping in a Layout to have a Header, Footer for components
+    
     <StateContext>
-      {/* Placing each & every component within Layout.*/}
       
+      {/* Placing each & every component within Layout Component to have a Header, Footer for all of them. */}
       <Layout>
       {/* Add beautiful notifications */}
-        <Toaster/>  
+        <Toaster/>
         {
-          /* This component should be inside the Layout*/
-          /* Eg: If we are in Product page, this is a Product compoennet*/
+          /* This component should be inside the Layout
+           Eg: If we are in Product page, this is a Product component*/
         }
         <Component {...pageProps} />
       </Layout>
