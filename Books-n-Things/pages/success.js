@@ -8,12 +8,12 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/Link';
 import { BsBagCheckFill } from 'react-icons/bs';
-
 import { useStateContext } from '../context/StateContext';
 import { runFireworks } from '../lib/utils'; //show confetti on successful payment
 
 const Success = () => {
-  //fetching required details from state context.
+  
+  //fetching data(state variables, functions) from state context
   const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
   
   //this gets executes as soon as successful page loads
@@ -21,8 +21,8 @@ const Success = () => {
     localStorage.clear(); //resetting local storage
     setCartItems([]); //resetting cart items
     setTotalPrice(0); //resetting total price
-    setTotalQuantities(0);//resetting quantities
-    runFireworks();//show confetti
+    setTotalQuantities(0);//resetting total quantities
+    runFireworks();//showing confetti
   }, []);
 
   return (

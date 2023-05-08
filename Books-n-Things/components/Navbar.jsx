@@ -6,7 +6,7 @@ import { useStateContext } from '../context/StateContext';
 
 const Navbar = () => {
 
-  //fetching required details from state context.
+  //fetching data(state variables, functions) from state context
   const {showCart, totalQuantities, setShowCart}  = useStateContext();
 
   return (
