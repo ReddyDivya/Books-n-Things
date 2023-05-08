@@ -62,13 +62,19 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 - The top, right, bottom, and left properties determine the final location of positioned elements.
 
 	### relative
-- The offset(top/bottom/left/right) does not affect the position of any other elements unlike absolute.
-- the space given for the element in the page layout is the same as if position were static.
+	- The offset(top/bottom/left/right) does not affect the position of any other elements unlike absolute.
+	- the space given for the element in the page layout is the same as if position were static.
 	
-	<code>
-		position: relative;
-	</code>
-
+		<code>
+			position: relative;
+		</code>
+	
+	### absolute
+	- The offset(top/bottom/left/right) does affect the position of any other elements.
+	
+		<code>
+			position: relative;
+		</code>
 ---
 
 
