@@ -22,7 +22,7 @@ body, * {
 }
 
 a {
-  color: inherit;
+  color: inherit;/* should inherit its color value from its parent element*/
   text-decoration: none;
 }
 
