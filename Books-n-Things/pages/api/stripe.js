@@ -1,12 +1,18 @@
 /*
   Stripe Elements is a set of prebuilt UI components for building our web checkout flow. 
   It’s available as a feature of Stripe.js, It's a JavaScript library for building payment flows.
+  The Payment Element is an embeddable UI component that lets you accept up to 40+ payment methods with a single integration.
+
+  A Checkout Session controls what your customer sees on the payment page such as line items, the order amount and currency, and acceptable payment methods.
 */
 import Stripe from 'stripe';
 
 const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
 
-//Step-2: We are accepting the request and sending in the body
+/*
+  Step-2: We are accepting the request and sending in the body
+  https://stripe.com/docs/checkout/quickstart
+*/
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     try {
