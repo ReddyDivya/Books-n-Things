@@ -35,8 +35,10 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 - Sets the maximum width of an element.
 - max-width overrides width.
 
-	width: 100%; 
-	max-width:50%; //max-width overrides width
+	<quote>
+		width: 100%; 
+		max-width:50%; //max-width overrides width
+	</quote>
 	
 
 
