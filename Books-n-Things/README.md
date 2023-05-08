@@ -8,7 +8,7 @@ I built and deployed a fully responsive Books-n-Things e-commerce application, w
 
 ### CSS
 
-![::-webkit-scrollbar](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar)
+::-webkit-scrollbar - https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar
 	
 	
 
