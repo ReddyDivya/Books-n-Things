@@ -33,9 +33,13 @@ a {
   max-width overrides width
 */  
 max-width: 1400px;
+
+/*
+  horizontally center the element within its container.
+  the browser calculates the margin.
+*/
 margin: auto;
 width: 100%;
-
 }
 
 .layout{
