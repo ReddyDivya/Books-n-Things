@@ -1,9 +1,13 @@
 /*
   Next.js uses the App component to initialize pages.
+  We can override it and control the page initialization &
   Persist layouts between page changes
   Keeping state when navigating pages
   Inject additional data into pages
   Add global CSS only in this file ie. _app.js
+
+  Note: 
+  To override the default App, create the file pages/_app.js  
 */
 import React from 'react';
 import { Toaster } from 'react-hot-toast';//for beautiful notifications
@@ -16,6 +20,9 @@ import { StateContext } from '../context/StateContext';
 */
 import '../styles/globals.css';
 
+/*
+  Component prop is the active page. So whenever you navigate between routes, Component will change to the new page.
+*/
 function MyApp({ Component, pageProps }) {
   return (
     
