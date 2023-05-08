@@ -4,7 +4,8 @@
   Since the <Layout /> component is re-used when changing pages, its component state will be preserved (e.g. input values).
 
   Inside layout, we can fetch data on the client-side using useEffect or a library like SWR(stale-while-revalidate). 
-
+  Because this file is not a Page, you cannot use getStaticProps or getServerSideProps currently.
+  
   SWR - components will get a stream of data updates constantly and automatically. & the UI will be always fast and reactive.
 */
 import React from 'react';
