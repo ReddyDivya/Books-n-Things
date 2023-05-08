@@ -29,7 +29,12 @@ function MyApp({ Component, pageProps }) {
     
     <StateContext>
       
-      {/* Placing each & every component within Layout Component to have a Header, Footer for all of them. */}
+      {/*
+        In next js, If you only have one layout for your entire application(Navbar, Footer), 
+        we can create a Custom App and wrap our application with the layout. 
+        Since the <Layout /> component is re-used when changing pages, its component state will be preserved (e.g. input values).
+      */
+      }
       <Layout>
       {/* Add beautiful notifications */}
         <Toaster/>
