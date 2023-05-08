@@ -13,6 +13,7 @@ import { useStateContext } from '../context/StateContext';
 import { runFireworks } from '../lib/utils'; //show confetti on successful payment
 
 const Success = () => {
+  //fetching required details from state context.
   const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
   
   //this gets executes as soon as successful page loads
