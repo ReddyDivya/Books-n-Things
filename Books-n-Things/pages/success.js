@@ -1,4 +1,6 @@
 /*
+  This is a redirect success page back from Checkout.
+  --------------------------------------------------------------------
   This file is insid the pages directory. 
   When a file is added to the pages directory, it's automatically available as a route.
   Eg: If we create pages/success.js that exports a React component like below, it will be accessible at /success.
