@@ -31,7 +31,7 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 
 ---
 
-### max-width
+### max-width - https://developer.mozilla.org/en-US/docs/Web/CSS/max-width
 
 - Sets the maximum width of an element.
 - max-width overrides width.
