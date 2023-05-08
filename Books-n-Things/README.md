@@ -76,5 +76,16 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 			position: relative;
 		</code>
 ---
+### white-space - https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
+
+- sets how white space inside an element is handled.
+	
+	<code>
+		white-space: normal; //fits within the container
+		white-space: nowrap; //doesn't fits within the container
+	</code>
+
+---	
+
 
 
