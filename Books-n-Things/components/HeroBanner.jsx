@@ -24,7 +24,6 @@ const HeroBanner = ({ heroBanner :
 
           {/* 
             Linking to Dynamic Paths
-            
           */}
           <Link href={`/product/${slug}`}>
             {/* Shop Now btn */}
