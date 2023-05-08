@@ -4,5 +4,12 @@ I built and deployed a fully responsive Books-n-Things e-commerce application, w
 
 ![Books-n-Things](https://user-images.githubusercontent.com/34181144/235346423-f63bd2ae-622d-4194-9e87-4247bf695674.gif)
 
+## References
+
+### CSS
+
+![::-webkit-scrollbar](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar)
+	
+	
 
 
