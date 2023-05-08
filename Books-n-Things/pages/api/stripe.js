@@ -1,3 +1,7 @@
+/*
+  Stripe Elements is a set of prebuilt UI components for building our web checkout flow. 
+  It’s available as a feature of Stripe.js, It's a JavaScript library for building payment flows.
+*/
 import Stripe from 'stripe';
 
 const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
