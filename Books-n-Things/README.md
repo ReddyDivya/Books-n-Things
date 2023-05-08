@@ -22,11 +22,13 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 	  width: 0px;  /* width 0px because, we don't want to display scroll bar but want to scroll*/
 	}
 
---
+---
+
 ### color: inherit; 
 
 - should inherit its color value from its parent element
---
+
+---
 	
 
 
