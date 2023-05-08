@@ -18,10 +18,11 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 - Only available in Chrome, Edge, Opera, Safari.
 - It's visible only if width/height is specified.
 
-	::-webkit-scrollbar {
-	  width: 0px;  /* width 0px because, we don't want to display scroll bar but want to scroll*/
-	}
-
+	<code>
+		::-webkit-scrollbar {
+		  width: 0px;  /* width 0px because, we don't want to display scroll bar but want to scroll*/
+		}
+	</code>
 ---
 
 ### color: inherit; 
