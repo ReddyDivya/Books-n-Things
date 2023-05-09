@@ -543,6 +543,7 @@ width: 100%;
 }
 /* Footer.jsx ends*/
 
+/* Cart starts */
  .cart-heading{
   display: flex; /* this display all divs in the container in one row ___ */
   align-items: center;
@@ -629,7 +630,6 @@ width: 100%;
 
 .total h3{
   font-size: 22px;
-
 }
 
 .remove-item{
@@ -690,7 +690,9 @@ width: 100%;
 .btn:hover{
   transform: scale(1.1,1.1);
 }
+/* Cart ends */
 
+/* product details starts */
 .product-detail-container{
   display: flex; /* this display all divs in the container in one row ___ */
   gap: 40px;
@@ -711,6 +713,7 @@ width: 100%;
   */
   transition: .3s ease-in-out;
 }
+
 .product-detail-image:hover{
   background-color: #f02d34;
 }
@@ -720,6 +723,7 @@ width: 100%;
   gap: 10px;
   margin-top: 20px;
 }
+
 .small-image{
   border-radius: 8px;
   background-color: #ebebeb;
@@ -856,7 +860,9 @@ width: 100%;
 .quantity-desc .plus{
   color: rgb(49, 168, 49);
 }
+/* product details ends */
 
+/* You may also like section starts */
 .maylike-products-wrapper{
   margin-top: 120px;
 }
@@ -876,12 +882,14 @@ width: 100%;
   gap: 15px;
   margin-top: 20px;
 }
+/* You may also like section ends */
 
 .max-qty{
   font-weight: 500;
   color: #f02d34;
 }
 
+/* success.js starts */
 .success-wrapper, .cancel-wrapper{
   background-color: white;
   min-height: 60vh;
@@ -939,6 +947,7 @@ width: 100%;
   margin-left: 5px;
   color: #f02d34;
 }
+/* success.js ends */
 
 /* .product-max-qty{
   margin-top: 10px;
