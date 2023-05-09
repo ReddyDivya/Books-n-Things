@@ -53,7 +53,11 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 
 - this display all divs in the container in one row ___
 
-### justify-content - aligns items in horizontal
+	### flex-wrap: sets flex items are forced onto one line to wrap onto multiple lines.
+		
+		flex-wrap: wrap;
+
+	### justify-content - aligns items in horizontal
 
 ### CSS position:
 

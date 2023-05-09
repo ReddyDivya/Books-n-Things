@@ -193,6 +193,10 @@ width: 100%;
 
 .products-container{
   display: flex; /* this display all divs in the container in one row ___ */
+
+  /*
+    flex-wrap: sets flex items are forced onto one line to wrap onto multiple lines.
+  */
   flex-wrap: wrap;
   
   /* justify-content - aligns items in horizontal */
@@ -906,6 +910,9 @@ margin-top: 160px;
    bottom: 60px;
   }
   .product-detail-container{
+    /*
+    flex-wrap: sets flex items are forced onto one line to wrap onto multiple lines.
+    */
     flex-wrap: wrap;
     }
   .product-detail-container .product-detail-image{
@@ -944,10 +951,11 @@ margin-top: 160px;
     width: 200px;
   }
   .top{
+    /*
+    flex-wrap: sets flex items are forced onto one line to wrap onto multiple lines.
+    */
     flex-wrap: wrap;
     gap: 10px;
-
-
   }
   .item-desc .bottom{
     margin-top: 30px;
