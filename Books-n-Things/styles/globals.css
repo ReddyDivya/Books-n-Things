@@ -160,10 +160,14 @@ width: 100%;
   */
   transition: transform .4s ease; /* property name | duration | easing function*/
   border: none;
-  background-color: transparent;
+  background-color: transparent; /* no bg color */
 }
 
 .cart-icon:hover{
+  /*
+    It can resize the horizontal and vertical dimensions at different scales.
+    specified with either one or two values, which represent the amount of scaling to be applied in each direction.
+  */
   transform: scale(1.1,1.1);
 }
 .cart-item-qty{

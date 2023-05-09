@@ -133,17 +133,35 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 - The transform CSS property lets you rotate, scale, skew, or translate an element.
 
 		transition: transform .4s ease; // property name | duration | easing function
-		
+
+		transition: margin-right 4s ease-in-out 1s; // property name | duration | easing function | delay
 
 
 ### translate - The translate property allows you to change the position of elements.
 
-            transform:translate(x-axis, y-axis, z-axis);
+        transform:translate(x-axis, y-axis, z-axis);
 
 
 ### rotate() - defines a transformation that rotates an element around a fixed point on the 2D plane, without deforming it.
 
-             transform:rotate(degree);
+        transform:rotate(degree);
+			 
+### scale() 
+	
+- Defines a transformation that resizes an element on the 2D plane.
+- It can resize the horizontal and vertical dimensions at different scales.
+- specified with either one or two values, which represent the amount of scaling to be applied in each direction.
+
+	### Syntax
+		scale(sx)
+		scale(sx, sy)
+		
+	### Example
+		
+		transform: scale(0.7); // Equal to scaleX(0.7) scaleY(0.7)
+		transform: scale(2, 0.5); // Equal to scaleX(2) scaleY(0.5)
+---		
+		
 
 
 
