@@ -884,10 +884,10 @@ width: 100%;
 }
 /* You may also like section ends */
 
-.max-qty{
+/* .max-qty{
   font-weight: 500;
   color: #f02d34;
-}
+} */
 
 /* success.js starts */
 .success-wrapper, .cancel-wrapper{
@@ -953,7 +953,6 @@ width: 100%;
   margin-top: 10px;
 } */
 
-/* ends */
 
 /* Responsive screens starts */
 @media screen and (max-width:800px) {
