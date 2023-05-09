@@ -56,6 +56,10 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 	### flex-wrap: sets flex items are forced onto one line to wrap onto multiple lines.
 		
 		flex-wrap: wrap;
+	
+	### gap : sets the gaps between rows and columns
+		
+		gap: 20px;
 
 	### justify-content - aligns items in horizontal
 
