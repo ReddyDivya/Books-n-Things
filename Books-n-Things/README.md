@@ -19,9 +19,11 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 - It's visible only if width/height is specified.
 
 	<code>
+		
 		::-webkit-scrollbar {
 		  width: 0px;  /* width 0px because, we don't want to display scroll bar but want to scroll*/
 		}
+		
 	</code>
 ---
 
@@ -37,8 +39,10 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 - max-width overrides width.
 
 	<code>
+		
 		width: 100%; 
 		max-width:50%; //max-width overrides width
+		
 	</code>
 	
 ---
@@ -66,14 +70,18 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 	- the space given for the element in the page layout is the same as if position were static.
 	
 		<code>
+		
 			position: relative;
+		
 		</code>
 	
 	### absolute
 	- The offset(top/bottom/left/right) does affect the position of any other elements.
 	
 		<code>
+		
 			position: relative;
+			
 		</code>
 ---
 ### white-space - https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
@@ -81,8 +89,10 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 - sets how white space inside an element is handled.
 	
 	<code>
+		
 		white-space: normal; //fits within the container
 		white-space: nowrap; //Collapses white space 
+		
 	</code>
 
 ---	
