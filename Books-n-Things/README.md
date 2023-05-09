@@ -123,7 +123,7 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 - The -webkit-text-stroke CSS property specifies the width and color of strokes for text characters.
 
 		
-		-webkit-text-stroke: 4px navy; /* Width and color values */
+		-webkit-text-stroke: 4px navy; // Width and color values
 		
 ---
 
@@ -131,6 +131,9 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 
 
 - The transform CSS property lets you rotate, scale, skew, or translate an element.
+
+		transition: transform .4s ease; // property name | duration | easing function
+		
 
 
 ### translate - The translate property allows you to change the position of elements.

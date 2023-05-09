@@ -155,7 +155,10 @@ width: 100%;
   - the space given for the element in the page layout is the same as if position were static.
   */
   position: relative;
-  transition: transform .4s ease;
+  /*
+    lets you rotate, scale, skew, or translate an element.
+  */
+  transition: transform .4s ease; /* property name | duration | easing function*/
   border: none;
   background-color: transparent;
 }
