@@ -95,12 +95,14 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 
 - The animation shorthand CSS property applies an animation between styles.
 - animation-name | animation-duration | animation-timing-func | animation-delay
+- To get an animation to work, you must bind the animation to an element.
 
 	### The @keyframes Rule
 	
 	- When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to    the new style at certain times.
+	
+	- the keywords "from" and "to" (which represents 0% (start) and 100% (complete)).
 
-- To get an animation to work, you must bind the animation to an element.
 	
 	### animation-duration
 	
