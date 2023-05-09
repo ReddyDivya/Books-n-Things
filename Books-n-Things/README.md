@@ -58,6 +58,7 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 		flex-wrap: wrap;
 	
 	### gap : sets the gaps between rows and columns
+			- It is a shorthand for row-gap and column-gap.
 		
 		gap: 20px;
 
@@ -78,11 +79,19 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 	
 	### absolute
 	- They are not positioned based on their usual place in the document flow, but based on the position of their ancestor.
-    	- To modify the position, you'll need to apply the top, bottom, right, and left.
+    - To modify the position, you'll need to apply the top, bottom, right, and left.
 	- The offset(top/bottom/left/right) does affect the position of any other elements.
 	
 	
 			position: absolute;
+			
+	### z-index  - https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+	- The z-index property specifies the stack order of an element.
+	- An element with greater stack order is always in front of an element with a lower stack order.
+	
+			z-index: -1; // Negative values to lower the priority
+			z-index: 0;  //integer values
+			z-index: 3;  //integer values
 	
 ---
 ### white-space - https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
