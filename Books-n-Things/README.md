@@ -63,6 +63,8 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 		gap: 20px;
 
 	### justify-content - aligns items in horizontal
+	
+			justify-content: space-between;
 
 ### CSS position:
 
