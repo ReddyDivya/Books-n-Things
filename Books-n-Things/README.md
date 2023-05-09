@@ -88,7 +88,9 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 	### z-index  - https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
 	- The z-index property specifies the stack order of an element.
 	- An element with greater stack order is always in front of an element with a lower stack order.
-	
+	- works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) 
+	  and flex items (elements that are direct children of display:flex elements).
+
 			z-index: -1; // Negative values to lower the priority
 			z-index: 0;  //integer values
 			z-index: 3;  //integer values

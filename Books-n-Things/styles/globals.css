@@ -269,6 +269,13 @@ width: 100%;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+
+  /*
+      - The z-index property specifies the stack order of an element.
+      - An element with greater stack order is always in front of an element with a lower stack order.
+      - works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) 
+        and flex items (elements that are direct children of display:flex elements).
+  */
   z-index:10000 !important;
 }
 
@@ -441,6 +448,13 @@ text-align: end;
   position: fixed;
   right: 0;
   top: 0;
+
+  /*
+      - The z-index property specifies the stack order of an element.
+      - An element with greater stack order is always in front of an element with a lower stack order.
+      - works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) 
+        and flex items (elements that are direct children of display:flex elements).
+  */
   z-index: 100;
   /* will-change: transform; */
   transition: all 1s ease-in-out;
@@ -909,6 +923,12 @@ margin-top: 160px;
   }
   .hero-banner-container button{
     margin-top: 90px;
+    /*
+      - The z-index property specifies the stack order of an element.
+      - An element with greater stack order is always in front of an element with a lower stack order.
+      - works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) 
+        and flex items (elements that are direct children of display:flex elements).
+    */
     z-index: 10000;
   }
   .desc{
