@@ -209,6 +209,10 @@ width: 100%;
 
 .product-card{
  cursor: pointer;
+  /*
+    It can resize the horizontal and vertical dimensions at different scales.
+    specified with either one or two values, which represent the amount of scaling to be applied in each direction.
+  */
   transform: scale(1, 1);
   /*
     lets you rotate, scale, skew, or translate an element.
@@ -218,11 +222,21 @@ width: 100%;
 }
 
 .product-card:hover{
+
+  /*
+    It can resize the horizontal and vertical dimensions at different scales.
+    specified with either one or two values, which represent the amount of scaling to be applied in each direction.
+  */
   transform: scale(1.1,1.1)
 }
 .product-image{
   border-radius: 15px;
  background-color: #ebebeb;
+
+  /*
+    It can resize the horizontal and vertical dimensions at different scales.
+    specified with either one or two values, which represent the amount of scaling to be applied in each direction.
+  */
   transform: scale(1, 1);
   /*
     lets you rotate, scale, skew, or translate an element.
@@ -640,7 +654,13 @@ padding: 30px 65px;
   background-color: #f02d34;
   color: #fff;
   cursor: pointer;
+
+  /*
+    It can resize the horizontal and vertical dimensions at different scales.
+    specified with either one or two values, which represent the amount of scaling to be applied in each direction.
+  */
   transform: scale(1, 1);
+
   /*
     lets you rotate, scale, skew, or translate an element.
   */
@@ -739,6 +759,11 @@ padding: 30px 65px;
   color: #f02d34;
   cursor: pointer;
   width: 200px;
+
+  /*
+    It can resize the horizontal and vertical dimensions at different scales.
+    specified with either one or two values, which represent the amount of scaling to be applied in each direction.
+  */
   transform: scale(1, 1);
   
   /*
@@ -760,6 +785,11 @@ padding: 30px 65px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+
+  /*
+    It can resize the horizontal and vertical dimensions at different scales.
+    specified with either one or two values, which represent the amount of scaling to be applied in each direction.
+  */
   transform: scale(1, 1);
   
   /*
