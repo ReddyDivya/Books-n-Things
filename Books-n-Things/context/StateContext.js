@@ -70,7 +70,7 @@ export const StateContext = ({children}) => {
 
   //toggling the cart items quantity in cart component
   const toggleCartItemQuanitity = (id, value) => {
-
+    //id - item_id, value - inc/dec
     //finidng the product
     foundProduct = cartItems.find((item) => item._id === id)
     

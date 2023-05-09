@@ -19,8 +19,11 @@ const ProductDetails = ({product, products}) => {
   const [index, setIndex] = useState(0);
   
   //fetching data(state variables, functions) from state context
-  const {incQty, decQty, qty, onAdd, setShowCart} = useStateContext();
+  const {incQty, decQty, qty, onAdd, setShowCart, setQty} = useStateContext();
   
+  
+  console.log('qty >> '+ qty);
+
   //Buy Now functionality
   const handleBuyNow = () => {
     onAdd(product, qty);//add to cart
@@ -90,7 +93,8 @@ const ProductDetails = ({product, products}) => {
                     {
                         products.map((item) => (
                             <Product key={item._id} 
-                            product={item}/> 
+                            product={item}
+                            /> 
                         ))
                     }
                 </div>
