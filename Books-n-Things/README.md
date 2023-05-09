@@ -109,6 +109,7 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 	- animation-duration property defines how long an animation should take to complete.
 	
 	<code>
+		
 		@keyframes marquee {
 		  from { transform: translateX(0); }
 		  to { transform: translateX(-50%); }
@@ -126,7 +127,9 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 - The -webkit-text-stroke CSS property specifies the width and color of strokes for text characters.
 
 	<code>
+		
 		-webkit-text-stroke: 4px navy; /* Width and color values */
-	<code>
+		
+	</code>
 
 
