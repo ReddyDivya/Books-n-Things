@@ -102,6 +102,10 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 
 - To get an animation to work, you must bind the animation to an element.
 	
+	### animation-duration
+	
+	- animation-duration property defines how long an animation should take to complete.
+	
 	<code>
 		
 		@keyframes marquee {

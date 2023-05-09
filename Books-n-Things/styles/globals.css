@@ -115,7 +115,14 @@ width: 100%;
   animation-play-state: paused;
 }
 
-/* animations */
+/* animations 
+  - The animation shorthand CSS property applies an animation between styles.
+  - animation-name | animation-duration | animation-timing-func | animation-delay
+  
+  The @keyframes Rule
+	- When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+  - To get an animation to work, you must bind the animation to an element.
+*/
 @keyframes marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
