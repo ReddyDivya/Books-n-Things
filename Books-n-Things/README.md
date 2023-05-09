@@ -65,25 +65,23 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 	- The offset(top/bottom/left/right) does not affect the position of any other elements unlike absolute.
 	- the space given for the element in the page layout is the same as if position were static.
 	
-		<code>
+	
 			position: relative;
-		</code>
+	
 	
 	### absolute
 	- The offset(top/bottom/left/right) does affect the position of any other elements.
 	
-		<code>
+	
 			position: relative;
-		</code>
+	
 ---
 ### white-space - https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
 
 - sets how white space inside an element is handled.
 	
-	<code>
 		white-space: normal; //fits within the container
 		white-space: nowrap; //Collapses white space 
-	</code>
 
 ---	
 ### will-change: transform;
@@ -108,8 +106,6 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 	
 	- animation-duration property defines how long an animation should take to complete.
 	
-	<code>
-		
 		@keyframes marquee {
 		  from { transform: translateX(0); }
 		  to { transform: translateX(-50%); }
@@ -119,7 +115,6 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 		{
 			animation: marquee 15s linear infinite;
 		}
-	</code>
 ---
 
 ### -webkit-text-stroke  https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke
