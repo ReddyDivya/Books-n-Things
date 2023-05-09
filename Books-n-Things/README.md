@@ -182,6 +182,7 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 		transform: scale(2, 0.5); // Equal to scaleX(2) scaleY(0.5)
 ---		
 		
-
+### will-change: transform; 
+	- hints to browsers how an element is expected to change.
 
 

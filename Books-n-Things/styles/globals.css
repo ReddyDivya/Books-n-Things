@@ -210,6 +210,9 @@ width: 100%;
 .product-card{
  cursor: pointer;
   transform: scale(1, 1);
+  /*
+    lets you rotate, scale, skew, or translate an element.
+  */
   transition: transform 0.5s ease;
  color: #324d67;
 }
@@ -221,6 +224,9 @@ width: 100%;
   border-radius: 15px;
  background-color: #ebebeb;
   transform: scale(1, 1);
+  /*
+    lets you rotate, scale, skew, or translate an element.
+  */
   transition: transform 0.5s ease;
 }
 
@@ -458,9 +464,11 @@ text-align: end;
       - If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.  
   */
   z-index: 100;
-  /* will-change: transform; */
+  will-change: transform; /* hints to browsers how an element is expected to change */
+  /*
+    lets you rotate, scale, skew, or translate an element.
+  */
   transition: all 1s ease-in-out;
-
 }
 .cart-container{
   height: 100vh;
@@ -632,7 +640,10 @@ padding: 30px 65px;
   background-color: #f02d34;
   color: #fff;
   cursor: pointer;
-    transform: scale(1, 1);
+  transform: scale(1, 1);
+  /*
+    lets you rotate, scale, skew, or translate an element.
+  */
   transition: transform 0.5s ease;
 }
 .btn:hover{
@@ -654,6 +665,10 @@ padding: 30px 65px;
   width: 400px;
   height: 400px;
   cursor: pointer;
+  
+  /*
+    lets you rotate, scale, skew, or translate an element.
+  */
   transition: .3s ease-in-out;
 }
 .product-detail-image:hover{
@@ -724,7 +739,11 @@ padding: 30px 65px;
   color: #f02d34;
   cursor: pointer;
   width: 200px;
-   transform: scale(1, 1);
+  transform: scale(1, 1);
+  
+  /*
+    lets you rotate, scale, skew, or translate an element.
+  */
   transition: transform 0.5s ease;
 }
 .buttons .add-to-cart:hover{
@@ -741,7 +760,11 @@ padding: 30px 65px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-   transform: scale(1, 1);
+  transform: scale(1, 1);
+  
+  /*
+    lets you rotate, scale, skew, or translate an element.
+  */
   transition: transform 0.5s ease;
 }
 .buttons .buy-now:hover{
