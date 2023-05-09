@@ -131,7 +131,7 @@ width: 100%;
 }
 
  span.text-red {
-    -webkit-text-stroke: 1px #f02d34;
+    -webkit-text-stroke: 1px #f02d34; /* specifies the width and color of strokes for text characters. */
     margin-left: 6px;
 }
 
