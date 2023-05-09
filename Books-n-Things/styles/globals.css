@@ -130,7 +130,6 @@ width: 100%;
   to { transform: translateX(-50%); }
 }
 
-/* start from here on may 9th*/
  span.text-red {
     -webkit-text-stroke: 1px #f02d34;
     margin-left: 6px;

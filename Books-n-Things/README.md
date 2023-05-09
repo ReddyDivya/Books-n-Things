@@ -119,5 +119,14 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 			animation: marquee 15s linear infinite;
 		}
 	</code>
+---
+
+### -webkit-text-stroke
+
+- The -webkit-text-stroke CSS property specifies the width and color of strokes for text characters.
+
+	<code>
+		-webkit-text-stroke: 4px navy; /* Width and color values */
+	</code>
 
 
