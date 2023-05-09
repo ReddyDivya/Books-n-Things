@@ -80,12 +80,40 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 
 - sets how white space inside an element is handled.
 	
-	<block>
+	<code>
 		white-space: normal; //fits within the container
-		white-space: nowrap; //doesn't fits within the container
-	</block>
+		white-space: nowrap; //Collapses white space 
+	</code>
 
 ---	
+### will-change: transform;
 
+- hints to browsers how an element is expected to change
+
+---
+### animation
+
+- The animation shorthand CSS property applies an animation between styles.
+- animation-name | animation-duration | animation-timing-func | animation-delay
+
+	### The @keyframes Rule
+	
+	- When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to    the new style at certain times.
+
+- To get an animation to work, you must bind the animation to an element.
+	
+	<code>
+		
+		@keyframes marquee {
+		  from { transform: translateX(0); }
+		  to { transform: translateX(-50%); }
+		}
+
+		p
+		{
+			animation: marquee 15s linear infinite;
+		}
+		
+	</code>
 
 

@@ -100,8 +100,13 @@ width: 100%;
   - The offset(top/bottom/left/right) does affect the position of any other elements.
   */
   position: absolute;
-  white-space: nowrap;
-  will-change: transform;
+  
+  /* sets how white space inside an element is handled. */
+  white-space: nowrap; /* Collapses white space */
+  
+  will-change: transform; /* hints to browsers how an element is expected to change */
+  
+  /* animation-name | animation-duration | animation-timing-func | animation-delay*/
   animation: marquee 15s linear infinite;
   width: 180%;
 }
