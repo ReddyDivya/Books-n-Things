@@ -69,10 +69,12 @@ Checkout Payment - https://stripe.com/docs/checkout/quickstart
 	
 	
 	### absolute
+	- They are not positioned based on their usual place in the document flow, but based on the position of their ancestor.
+    	- To modify the position, you'll need to apply the top, bottom, right, and left.
 	- The offset(top/bottom/left/right) does affect the position of any other elements.
 	
 	
-			position: relative;
+			position: absolute;
 	
 ---
 ### white-space - https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
